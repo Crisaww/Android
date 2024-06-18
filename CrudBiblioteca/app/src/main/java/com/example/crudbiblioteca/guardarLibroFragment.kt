@@ -5,12 +5,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.RequestFuture
 import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
+import com.example.crudbiblioteca.R.id.btnGuardar
 import com.example.crudbiblioteca.config.config
 
 // TODO: Rename parameter arguments, choose names that match
@@ -37,6 +40,7 @@ class guardarLibroFragment : Fragment() {
     private lateinit var txtDisponibles:EditText
     private lateinit var txtOcupados:EditText
     private var id:Int=0
+    private lateinit var btnGuardar: Button
     fun guardarLibro(){
         try {
             if(id==0){ //Se crea el libro
@@ -52,8 +56,42 @@ class guardarLibroFragment : Fragment() {
                                           Toast.LENGTH_LONG
                                       ).show()
                     },
-                    Response.ErrorListener {  }
+                    Response.ErrorListener {
+                        //metodo que se ejecuta cuando la peticion da error
+                        Toast.makeText(
+                            context,"Error al guardar",
+                            Toast.LENGTH_LONG
+                        ).show()
+                    }
                 )
+                {
+                    //Se agregan los datos para la petición
+                    override fun getParams(): MutableMap<String, String>{
+                        var parametros=HashMap<String,String>()
+                        /*
+                         parametros.put("titulo",txtTitulo.text.toString())
+                         parametros.put("autor",txtAutor.text.toString())
+                         parametros.put("isbn",txtIsbn.text.toString())
+                         parametros.put("genero",txtGenero.text.toString())
+                         parametros.put("disponibles",txtDisponibles.text.toString())
+                         parametros.put("ocupados",txtOcupados.text.toString())
+                         //uno por cada dato que requiere
+                          */
+                        parametros.put("titulo",txtTitulo.text.toString())
+                        parametros.put("nombre_autor",txtAutor.text.toString())
+                        parametros.put("isbn",txtIsbn.text.toString())
+                        parametros.put("genero",txtGenero.text.toString())
+                        parametros.put("num_ejem_disponibles",txtDisponibles.text.toString())
+                        parametros.put("num_ejem_ocupados",txtOcupados.text.toString())
+
+                        return parametros
+
+
+                    }
+                }
+                val queue=Volley.newRequestQueue(context)
+                //Se añade la petición
+                queue.add(request)
             }else{ //Se actualiza el libro
 
             }
@@ -76,7 +114,22 @@ class guardarLibroFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_guardar_libro, container, false)
+        var view = inflater.inflate(
+            R.layout.fragment_guardar_libro, container, false)
+        txtTitulo=view.findViewById(R.id.txtTitulo)
+        txtAutor=view.findViewById(R.id.txtAutor)
+        txtIsbn=view.findViewById(R.id.txtIsbn)
+        txtGenero=view.findViewById(R.id.txtGenero)
+        txtDisponibles=view.findViewById(R.id.txtDisponibles)
+        txtOcupados=view.findViewById(R.id.txtOcupados)
+        btnGuardar=view.findViewById(R.id.btnGuardar)
+        btnGuardar.setOnClickListener{
+            guardarLibro()
+        }
+        return view
+
+
+
     }
 
     companion object {
