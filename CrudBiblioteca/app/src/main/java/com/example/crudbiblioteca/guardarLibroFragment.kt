@@ -10,11 +10,15 @@ import android.widget.EditText
 import android.widget.Toast
 import com.android.volley.Request
 import com.android.volley.Response
+import com.android.volley.toolbox.JsonObjectRequest
+import com.android.volley.toolbox.JsonRequest
 import com.android.volley.toolbox.RequestFuture
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.example.crudbiblioteca.R.id.btnGuardar
 import com.example.crudbiblioteca.config.config
+//import com.google.gson.JsonObject //Genera error
+import org.json.JSONObject
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -39,56 +43,100 @@ class guardarLibroFragment : Fragment() {
     private lateinit var txtIsbn:EditText
     private lateinit var txtDisponibles:EditText
     private lateinit var txtOcupados:EditText
-    private var id:Int=0
     private lateinit var btnGuardar: Button
+    private var id:Int=0
+
+    /*
+    Request: Es la petición que se hace a la api
+    StringRequest: Responde un String
+    JsonRequest: Responde un Json
+    JsonArrayRequest: Responde un arreglo Json
+     */
+
+
+
+
     fun guardarLibro(){
         try {
             if(id==0){ //Se crea el libro
-                //Se crea la petición
-                val request=object:StringRequest(
-                    Request.Method.POST, //método de la de petición
-                    config.urlLibro, //url de la petición
-                    Response.Listener {
-                        //Metodo que se ejecuta cuando la peticion es correcta
-                                      Toast.makeText(
-                                          context,
-                                          "Se guardó correctamente",
-                                          Toast.LENGTH_LONG
-                                      ).show()
-                    },
-                    Response.ErrorListener {
-                        //metodo que se ejecuta cuando la peticion da error
-                        Toast.makeText(
-                            context,"Error al guardar",
-                            Toast.LENGTH_LONG
-                        ).show()
-                    }
-                )
-                {
-                    //Se agregan los datos para la petición
-                    override fun getParams(): MutableMap<String, String>{
-                        var parametros=HashMap<String,String>()
-                        /*
-                         parametros.put("titulo",txtTitulo.text.toString())
-                         parametros.put("autor",txtAutor.text.toString())
-                         parametros.put("isbn",txtIsbn.text.toString())
-                         parametros.put("genero",txtGenero.text.toString())
-                         parametros.put("disponibles",txtDisponibles.text.toString())
-                         parametros.put("ocupados",txtOcupados.text.toString())
-                         //uno por cada dato que requiere
-                          */
+                /*
+               //Se crea la petición
+               val request=object:StringRequest(
+                   Request.Method.POST, //método de la de petición
+                   config.urlLibro, //url de la petición
+                   Response.Listener {
+                       //Metodo que se ejecuta cuando la peticion es correcta
+                                     Toast.makeText(
+                                         context,
+                                         "Se guardó correctamente",
+                                         Toast.LENGTH_LONG
+                                     ).show()
+                   },
+                   Response.ErrorListener {
+                       //metodo que se ejecuta cuando la peticion da error
+                       Toast.makeText(
+                           context,"Error al guardar",
+                           Toast.LENGTH_LONG
+                       ).show()
+                   }
+               )
+               {
+                   //Se agregan los datos para la petición
+                   override fun getParams(): MutableMap<String, String>{
+                       var parametros=HashMap<String,String>()
+                       /*
                         parametros.put("titulo",txtTitulo.text.toString())
-                        parametros.put("nombre_autor",txtAutor.text.toString())
+                        parametros.put("autor",txtAutor.text.toString())
                         parametros.put("isbn",txtIsbn.text.toString())
                         parametros.put("genero",txtGenero.text.toString())
-                        parametros.put("num_ejem_disponibles",txtDisponibles.text.toString())
-                        parametros.put("num_ejem_ocupados",txtOcupados.text.toString())
+                        parametros.put("disponibles",txtDisponibles.text.toString())
+                        parametros.put("ocupados",txtOcupados.text.toString())
+                        //uno por cada dato que requiere
+                         */
+                       parametros.put("titulo",txtTitulo.text.toString())
+                       parametros.put("nombre_autor",txtAutor.text.toString())
+                       parametros.put("isbn",txtIsbn.text.toString())
+                       parametros.put("genero",txtGenero.text.toString())
+                       parametros.put("num_ejem_disponibles",txtDisponibles.text.toString())
+                       parametros.put("num_ejem_ocupados",txtOcupados.text.toString())
 
-                        return parametros
+                       return parametros
 
 
-                    }
-                }
+                   }
+               }
+
+    */
+                var parametros=JSONObject()
+                parametros.put("titulo",txtTitulo.text.toString())
+                parametros.put("autor",txtAutor.text.toString())
+                parametros.put("isbn",txtIsbn.text.toString())
+                parametros.put("genero",txtGenero.text.toString())
+                parametros.put("num_ejem_disponibles",txtDisponibles.text.toString())
+                parametros.put("num_ejem_ocupados",txtOcupados.text.toString())
+                //Uno por cada dato que se requiera
+
+                var request=JsonObjectRequest(
+                    Request.Method.POST, //método
+                    config.urlLibro, //url
+                    parametros, //Datos de la petición
+                    {response->
+                        Toast.makeText(
+                            context,
+                            "Se guardó correctamente",
+                            Toast.LENGTH_LONG
+                        ).show()
+                    }, //Cuando la respuesta es correcta
+
+                    {error->
+                        Toast.makeText(
+                            context,
+                            "Se generó un error :(",
+                            Toast.LENGTH_LONG
+                        ).show()
+                    } //Cuando es incorrecta
+                )
+                //Se crea la cola de trabajo y se añade la petición
                 val queue=Volley.newRequestQueue(context)
                 //Se añade la petición
                 queue.add(request)
