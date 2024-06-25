@@ -17,6 +17,8 @@ import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.example.crudbiblioteca.R.id.btnGuardar
 import com.example.crudbiblioteca.config.config
+import com.example.crudbiblioteca.models.libro
+import com.google.gson.Gson
 //import com.google.gson.JsonObject //Genera error
 import org.json.JSONObject
 
@@ -44,6 +46,7 @@ class guardarLibroFragment : Fragment() {
     private lateinit var txtDisponibles:EditText
     private lateinit var txtOcupados:EditText
     private lateinit var btnGuardar: Button
+    //De manera temporal se asigna un id
     private var id:Int=0
 
     /*
@@ -52,6 +55,46 @@ class guardarLibroFragment : Fragment() {
     JsonRequest: Responde un Json
     JsonArrayRequest: Responde un arreglo Json
      */
+
+    /*
+    Método encargado de traer la info del libro
+     */
+
+    fun actualizarLibro(){
+        
+    }
+    fun consultarLibro(){
+        /*
+        Solo se debe consultar, si el ID es diferente a vacío
+         */
+        if(id!=0){
+
+            var request=JsonObjectRequest(
+                Request.Method.GET, //Método de la petición
+                config.urlLibro+id, //Url
+                null,//Parametros
+                {response->
+                val gson= Gson()
+                    //Se convierte
+                    val libro:libro=gson.fromJson(response.toString(), libro::class.java)
+                    //Se modifica el atributo text de los campos con el valor del objeto
+                    txtTitulo.setText(response.getString("titulo"))
+                    txtAutor.setText(response.getString("autor"))
+                    txtIsbn.setText(response.getString("isbn"))
+                    txtGenero.setText(response.getString("genero"))
+                    txtDisponibles.setText(response.getInt("num_ejem_disponibles"))
+                    txtOcupados.setText(response.getInt("num_ejem_ocupados"))
+                }, //Respuesta correcta
+                {error->
+                    Toast.makeText(
+                        context,
+                        "Error al consultar",
+                        Toast.LENGTH_LONG
+                    ).show()
+                } //Error en la petición
+            )
+        }
+    }
 
 
 
@@ -171,13 +214,10 @@ class guardarLibroFragment : Fragment() {
         txtDisponibles=view.findViewById(R.id.txtDisponibles)
         txtOcupados=view.findViewById(R.id.txtOcupados)
         btnGuardar=view.findViewById(R.id.btnGuardar)
-        btnGuardar.setOnClickListener{
-            guardarLibro()
+        btnGuardar.setOnClickListener{guardarLibro()
         }
+        consultarLibro()
         return view
-
-
-
     }
 
     companion object {
