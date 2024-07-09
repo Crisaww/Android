@@ -9,13 +9,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.android.volley.Request
-import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
-import com.android.volley.toolbox.JsonRequest
-import com.android.volley.toolbox.RequestFuture
-import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import com.example.crudbiblioteca.R.id.btnGuardar
 import com.example.crudbiblioteca.config.config
 import com.example.crudbiblioteca.models.libro
 import com.google.gson.Gson
@@ -47,7 +42,7 @@ class guardarLibroFragment : Fragment() {
     private lateinit var txtOcupados:EditText
     private lateinit var btnGuardar: Button
     //De manera temporal se asigna un id
-    private var id:Int=0
+    private var id:Int=12
 
     /*
     Request: Es la petición que se hace a la api
@@ -82,8 +77,8 @@ class guardarLibroFragment : Fragment() {
                     txtAutor.setText(response.getString("autor"))
                     txtIsbn.setText(response.getString("isbn"))
                     txtGenero.setText(response.getString("genero"))
-                    txtDisponibles.setText(response.getInt("num_ejem_disponibles"))
-                    txtOcupados.setText(response.getInt("num_ejem_ocupados"))
+                    txtDisponibles.setText(response.getInt("num_ejem_disponibles").toString())
+                    txtOcupados.setText(response.getInt("num_ejem_ocupados").toString())
                 }, //Respuesta correcta
                 {error->
                     Toast.makeText(
@@ -93,6 +88,10 @@ class guardarLibroFragment : Fragment() {
                     ).show()
                 } //Error en la petición
             )
+            //Se crea la cola de trabajo y se añade la petición
+            val queue=Volley.newRequestQueue(context)
+            //Se añade la petición
+            queue.add(request)
         }
     }
 
@@ -179,16 +178,50 @@ class guardarLibroFragment : Fragment() {
                         ).show()
                     } //Cuando es incorrecta
                 )
+
                 //Se crea la cola de trabajo y se añade la petición
                 val queue=Volley.newRequestQueue(context)
                 //Se añade la petición
                 queue.add(request)
+
             }else{ //Se actualiza el libro
 
-            }
+                var parametros=JSONObject()
+                parametros.put("titulo",txtTitulo.text.toString())
+                parametros.put("autor",txtAutor.text.toString())
+                parametros.put("isbn",txtIsbn.text.toString())
+                parametros.put("genero",txtGenero.text.toString())
+                parametros.put("num_ejem_disponibles",txtDisponibles.text.toString())
+                parametros.put("num_ejem_ocupados",txtOcupados.text.toString())
+
+                var request=JsonObjectRequest(
+                    Request.Method.PUT, //método
+                    config.urlLibro +id + "/", //url
+                    parametros, //Datos de la petición
+                    {response->
+                        Toast.makeText(
+                            context,
+                            "Se guardó correctamente",
+                            Toast.LENGTH_LONG
+                        ).show()
+                    }, //Cuando la respuesta es correcta
+
+                    { error ->
+                        Toast.makeText(
+                            context,
+                            "Se generó un error :(",
+                            Toast.LENGTH_LONG
+                        ).show()
+                    }
+                )
+
+            //Se crea la cola de trabajo y se añade la petición
+            val queue=Volley.newRequestQueue(context)
+            //Se añade la petición
+            queue.add(request)
+        }
 
         }catch (error:Exception){
-
         }
     }
 
@@ -208,10 +241,10 @@ class guardarLibroFragment : Fragment() {
         var view = inflater.inflate(
             R.layout.fragment_guardar_libro, container, false)
         txtTitulo=view.findViewById(R.id.txtTitulo)
-        txtAutor=view.findViewById(R.id.txtAutor)
-        txtIsbn=view.findViewById(R.id.txtIsbn)
-        txtGenero=view.findViewById(R.id.txtGenero)
-        txtDisponibles=view.findViewById(R.id.txtDisponibles)
+        txtAutor=view.findViewById(R.id.lblAutor)
+        txtIsbn=view.findViewById(R.id.lblIsbn)
+        txtGenero=view.findViewById(R.id.lblGenero)
+        txtDisponibles=view.findViewById(R.id.lblDisponibles)
         txtOcupados=view.findViewById(R.id.txtOcupados)
         btnGuardar=view.findViewById(R.id.btnGuardar)
         btnGuardar.setOnClickListener{guardarLibro()

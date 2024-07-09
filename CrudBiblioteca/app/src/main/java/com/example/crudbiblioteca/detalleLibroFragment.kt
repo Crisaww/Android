@@ -5,6 +5,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.TextView
+import android.widget.Toast
+import com.android.volley.Request
+import com.android.volley.toolbox.JsonObjectRequest
+import com.android.volley.toolbox.Volley
+import com.example.crudbiblioteca.config.config
+import com.example.crudbiblioteca.models.libro
+import com.google.gson.Gson
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -29,12 +38,97 @@ class detalleLibroFragment : Fragment() {
         }
     }
 
+    //Definir las variables
+
+    private lateinit var lblTitulo: TextView
+    private lateinit var lblAutor: TextView
+    private lateinit var lblGenero: TextView
+    private lateinit var lblIsbn: TextView
+    private lateinit var lblDisponibles: TextView
+    private lateinit var lblOcupados: TextView
+    private lateinit var btnEditar: Button
+    private lateinit var btnEliminar: Button
+
+
+
+    //Se asigna un id existente temporal
+    private var id:Int=12
+
+    fun consultarLibro(){
+        /*
+        Solo se debe consultar, si el ID es diferente a vacío
+         */
+        if(id!=0){
+
+            var request= JsonObjectRequest(
+                Request.Method.GET, //Método de la petición
+                config.urlLibro+id, //Url
+                null,//Parametros
+                {response->
+                    val gson= Gson()
+                    //Se convierte
+                    val libro: libro =gson.fromJson(response.toString(), libro::class.java)
+                    //Se modifica el atributo text de los campos con el valor del objeto
+                    lblTitulo.setText(response.getString("titulo"))
+                    lblAutor.setText(response.getString("autor"))
+                    lblGenero.setText(response.getString("isbn"))
+                    lblIsbn.setText(response.getString("genero"))
+                    lblDisponibles.setText(response.getInt("num_ejem_disponibles").toString())
+                    lblOcupados.setText(response.getInt("num_ejem_ocupados").toString())
+                }, //Respuesta correcta
+                {error->
+                    Toast.makeText(
+                        context,
+                        "Error al consultar",
+                        Toast.LENGTH_LONG
+                    ).show()
+                } //Error en la petición
+            )
+            //Se crea la cola de trabajo y se añade la petición
+            val queue= Volley.newRequestQueue(context)
+            //Se añade la petición
+            queue.add(request)
+        }
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_detalle_libro, container, false)
+        val view= inflater.inflate(R.layout.fragment_detalle_libro, container, false)
+        lblTitulo=view.findViewById(R.id.txtTitulo)
+        lblAutor=view.findViewById(R.id.lblAutor)
+        lblIsbn=view.findViewById(R.id.lblIsbn)
+        lblGenero=view.findViewById(R.id.lblGenero)
+        lblDisponibles=view.findViewById(R.id.lblDisponibles)
+        lblOcupados=view.findViewById(R.id.lblOcupados)
+
+
+
+
+
+
+        //Se ejecuta la consulta
+        consultarLibro()
+
+        btnEditar=view.findViewById(R.id.btnEditar)
+        btnEditar.setOnClickListener {editarLibro()}
+        btnEliminar=view.findViewById(R.id.btnEliminar)
+        btnEliminar.setOnClickListener {eliminarLibro()}
+
+        return view
+    }
+
+
+    //Se crea el metodo editar libro
+    fun editarLibro(){
+
+    }
+
+    //Se crea el método eliminar
+    fun eliminarLibro(){
+
     }
 
     companion object {
