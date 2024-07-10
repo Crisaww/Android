@@ -4,5 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="morado1">#800080</color>
     <color name="morado2">#49117A</color>
+    <color name="morado3">#E0C8FF</color>
+    <color name="morado4">#D3B1FF</color>
+
     <color name="azul1">#90e0ef</color>
 </resources>
