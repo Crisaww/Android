@@ -11,7 +11,7 @@
         android:id="@+id/view2"
         android:layout_width="455dp"
         android:layout_height="57dp"
-        android:background="@color/morado1"
+        android:background="@drawable/degradado"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
