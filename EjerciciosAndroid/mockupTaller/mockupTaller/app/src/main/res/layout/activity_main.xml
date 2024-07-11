@@ -70,16 +70,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="Contraseña"
             android:fontFamily="@font/dmsans_regular"
+            android:text="Contraseña"
             android:textColor="@color/white"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.19"
+            app:layout_constraintHorizontal_bias="0.17"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.433" />
+            app:layout_constraintVertical_bias="0.436" />
 
         <TextView
             android:id="@+id/txtOlvidoContra"
@@ -182,10 +182,9 @@
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintHorizontal_bias="0.469"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.486" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView2"
@@ -203,15 +202,12 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.308" />
 
-        <!-- Logo de Google -->
-
-        <!-- Logo de Facebook -->
 
         <Button
             android:id="@+id/btnIniciarSesion"
             android:layout_width="175dp"
             android:layout_height="52dp"
-            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/morado2"
             android:text="Iniciar sesión"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
