@@ -34,4 +34,12 @@ class iniciar_sesion : AppCompatActivity() {
         //se ejecuta la actividad
         startActivity(intent)
     }
+
+    fun crearCuenta(view: View) {
+        //se configura el cambio activity
+        var intent = Intent(application, crear_cuenta::class.java)
+        //se ejecuta la actividad
+        startActivity(intent)
+    }
+
 }

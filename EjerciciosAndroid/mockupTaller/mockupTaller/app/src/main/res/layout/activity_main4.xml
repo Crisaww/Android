@@ -23,7 +23,7 @@
             android:layout_height="143dp">
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/Imagene"
                 android:layout_width="377dp"
                 android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
@@ -31,7 +31,7 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/titulo"
             android:layout_width="336dp"
             android:layout_height="wrap_content"
             android:text="Deadpool y wolverine llega a los cines de Colombia"
@@ -42,7 +42,7 @@
             android:translationY="155dp" />
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/corazon"
             android:layout_width="20dp"
             android:layout_height="17dp"
             android:translationX="230dp"
@@ -50,7 +50,7 @@
             app:srcCompat="@drawable/corazonblanco" />
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/compartir"
             android:layout_width="19dp"
             android:layout_height="16dp"
             android:translationX="280dp"
@@ -58,7 +58,7 @@
             app:srcCompat="@drawable/compartir" />
 
         <ImageView
-            android:id="@+id/imageView7"
+            android:id="@+id/imageDosPuntos"
             android:layout_width="16dp"
             android:layout_height="18dp"
             android:translationX="330dp"
@@ -66,7 +66,7 @@
             app:srcCompat="@drawable/puntos" />
 
         <ImageView
-            android:id="@+id/imageView8"
+            android:id="@+id/Imagenes"
             android:layout_width="16dp"
             android:layout_height="16dp"
             android:translationX="15dp"
@@ -74,7 +74,7 @@
             app:srcCompat="@drawable/mundointernet" />
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/letra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cinemark Colombia"

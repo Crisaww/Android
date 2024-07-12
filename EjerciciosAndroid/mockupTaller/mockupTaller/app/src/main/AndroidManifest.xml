@@ -22,8 +22,13 @@
             android:name=".inicio_pagina"
             android:exported="false" />
         <activity
+            android:name="recuperar_contra"
+            android:exported="false"/>
+
+        <activity
             android:name=".iniciar_sesion"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
