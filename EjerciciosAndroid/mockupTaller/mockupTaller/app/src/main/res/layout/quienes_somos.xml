@@ -5,7 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".quienes_somos">
+    tools:context=".quienes_somos"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="63dp">
 
     <View
         android:id="@+id/view2"
@@ -48,7 +50,7 @@
         app:layout_constraintVertical_bias="0.001" />
 
     <ImageView
-        android:id="@+id/imagecristian"
+        android:id="@+id/imagenangie"
         android:layout_width="113dp"
         android:layout_height="115dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -60,10 +62,23 @@
         app:srcCompat="@drawable/usuario" />
 
 
-
+    <TextView
+        android:id="@+id/textAngie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:text="Angie Lizeth Trujillo Gonzalez"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.299" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imagecarolina"
         android:layout_width="113dp"
         android:layout_height="115dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -75,5 +90,68 @@
         app:srcCompat="@drawable/usuario" />
 
 
+    <TextView
+        android:id="@+id/textCarolina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:text="Carolina Martínez Cortes"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.298" />
+
+    <ImageView
+        android:id="@+id/imagecristian"
+        android:layout_width="113dp"
+        android:layout_height="115dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469"
+        app:srcCompat="@drawable/usuario" />
+
+    <ImageView
+        android:id="@+id/imagemar"
+        android:layout_width="113dp"
+        android:layout_height="115dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.832"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469"
+        app:srcCompat="@drawable/usuario" />
+
+
+    <ImageView
+        android:id="@+id/imagemaria"
+        android:layout_width="113dp"
+        android:layout_height="115dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814"
+        app:srcCompat="@drawable/usuario" />
+
+    <ImageView
+        android:id="@+id/imagemayra"
+        android:layout_width="113dp"
+        android:layout_height="115dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.832"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814"
+        app:srcCompat="@drawable/usuario" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
