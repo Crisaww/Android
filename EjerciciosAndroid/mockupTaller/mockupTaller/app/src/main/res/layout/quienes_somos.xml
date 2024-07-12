@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity3">
+    tools:context=".quienes_somos">
 
     <View
         android:id="@+id/view2"
@@ -37,41 +37,43 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/fuente_poppins_medium"
-        android:text="¿Cómo usar TuVooz?"
+        android:text="¿Quiénes somos?"
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.373"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.001" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="199dp"
-        android:layout_height="177dp"
+        android:id="@+id/imagecristian"
+        android:layout_width="113dp"
+        android:layout_height="115dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.212"
-        app:srcCompat="@drawable/logomanual" />
+        app:layout_constraintVertical_bias="0.136"
+        app:srcCompat="@drawable/usuario" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="262dp"
-        android:layout_height="209dp"
-        android:fontFamily="@font/open_sans_bold"
-        android:text="TuVooz es una aplicación muy sencilla de usar, si no entiendes como funciona, a continuacion te dejamos un corto manual de como usar nuestra App."
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="20sp"
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="113dp"
+        android:layout_height="115dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.832"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.664" />
+        app:layout_constraintVertical_bias="0.136"
+        app:srcCompat="@drawable/usuario" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
