@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivity" >
+    tools:context=".iniciar_sesion" >
 
         <ImageView
             android:layout_width="match_parent"
@@ -86,6 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/open_sans_bold"
+            android:onClick="olvidoContra"
             android:text="¿Has olvidado tu contraseña?"
             android:textColor="@color/azul1"
             android:textSize="14sp"
@@ -114,6 +115,8 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.731" />
 
+        <!-- Botón de Iniciar Sesión con esquinas redondeadas -->
+
         <TextView
             android:id="@+id/txtRegistrarte"
             android:layout_width="wrap_content"
@@ -125,12 +128,10 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.701"
+            app:layout_constraintHorizontal_bias="0.732"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.731" />
-
-        <!-- Botón de Iniciar Sesión con esquinas redondeadas -->
 
         <TextView
             android:id="@+id/txtIniciar"
@@ -143,7 +144,7 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.553"
+            app:layout_constraintHorizontal_bias="0.635"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.822" />
@@ -159,7 +160,7 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.59"
+            app:layout_constraintHorizontal_bias="0.688"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.901" />
@@ -208,6 +209,7 @@
             android:layout_width="175dp"
             android:layout_height="52dp"
             android:backgroundTint="@color/morado2"
+            android:onClick="iniciarSesion"
             android:text="Iniciar sesión"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"

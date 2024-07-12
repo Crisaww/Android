@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:backgroundTint="@color/white"
-    tools:context=".MainActivity2">
+    tools:context=".inicio_pagina">
 
     <View
         android:id="@+id/view2"
