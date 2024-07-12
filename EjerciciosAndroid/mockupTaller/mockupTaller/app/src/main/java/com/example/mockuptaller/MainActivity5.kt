@@ -34,7 +34,7 @@ class MainActivity5 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.activity_main5, container, false)
+        return inflater.inflate(R.layout.crear_cuenta, container, false)
     }
 
     companion object {
