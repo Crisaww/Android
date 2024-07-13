@@ -36,15 +36,15 @@
 
     <ImageView
         android:id="@+id/imageInicio"
-        android:layout_width="54dp"
-        android:layout_height="52dp"
-        android:src="@drawable/inicio"
+        android:layout_width="38dp"
+        android:layout_height="46dp"
+        android:src="@drawable/home_house_ui_svgrepo_com"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.957"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.004" />
 
     <TextView
         android:id="@+id/text_configuracion_accesibilidad"
