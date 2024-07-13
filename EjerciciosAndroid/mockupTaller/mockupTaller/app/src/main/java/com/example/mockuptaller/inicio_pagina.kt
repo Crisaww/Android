@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -57,6 +58,14 @@ class inicio_pagina: AppCompatActivity() {
         //se ejecuta la actividad
         startActivity(intent)
     }
+
+    fun configuracion(view: View) {
+        //se configura el cambio activity
+        var intent = Intent(application, ventana_emergente::class.java)
+        //se ejecuta la actividad
+        startActivity(intent)
+    }
+
 
 
 }
