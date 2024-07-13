@@ -15,9 +15,7 @@
         <activity
             android:name=".MainActivity4"
             android:exported="false" />
-        <activity
-            android:name=".como_usar_tuvooz"
-            android:exported="false" />
+
         <activity
             android:name=".quienes_somos"
             android:exported="false" />
@@ -28,13 +26,28 @@
         <activity
             android:name=".inicio_pagina"
             android:exported="false" />
+
         <activity
             android:name="recuperar_contra"
             android:exported="false"/>
 
         <activity
+            android:name=".como_usar_tuvooz"
+            android:exported="false" />
+
+        <activity
+            android:name=".frases_y_palabras"
+            android:exported="false" />
+
+        <activity
+            android:name=".texto"
+            android:exported="false" />
+
+
+        <activity
             android:name=".iniciar_sesion"
             android:exported="true">
+
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

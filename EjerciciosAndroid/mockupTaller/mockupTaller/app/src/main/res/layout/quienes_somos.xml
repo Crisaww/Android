@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".quienes_somos"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="63dp">
@@ -81,36 +82,33 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/textAngie"
-        app:layout_constraintStart_toStartOf="@id/textAngie"
-        app:layout_constraintEnd_toEndOf="@id/textAngie"
         android:layout_marginTop="0sp"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/textAngie"
+        app:layout_constraintStart_toStartOf="@id/textAngie"
+        app:layout_constraintTop_toBottomOf="@id/textAngie">
 
         <ImageView
             android:id="@+id/instagramAngie"
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginEnd="8dp"
-            app:srcCompat="@drawable/instagram"
-            />
+            app:srcCompat="@drawable/instagram" />
 
         <ImageView
             android:id="@+id/facebookAngie"
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginEnd="8dp"
-            app:srcCompat="@drawable/facebook"
-            />
+            app:srcCompat="@drawable/facebook" />
 
         <ImageView
             android:id="@+id/googleAngie"
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginEnd="8dp"
-            app:srcCompat="@drawable/google"
-            />
+            app:srcCompat="@drawable/google" />
 
         <ImageView
             android:id="@+id/linkedinAngie"
@@ -153,20 +151,19 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/textCarolina"
-        app:layout_constraintStart_toStartOf="@id/textCarolina"
-        app:layout_constraintEnd_toEndOf="@id/textCarolina"
         android:layout_marginTop="0sp"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/textCarolina"
+        app:layout_constraintStart_toStartOf="@id/textCarolina"
+        app:layout_constraintTop_toBottomOf="@id/textCarolina">
 
         <ImageView
             android:id="@+id/instagramCaro"
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginEnd="8dp"
-            app:srcCompat="@drawable/instagram"
-            />
+            app:srcCompat="@drawable/instagram" />
 
         <ImageView
             android:id="@+id/facebookCaro"
@@ -180,16 +177,14 @@
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginEnd="8dp"
-            app:srcCompat="@drawable/google"
-            />
+            app:srcCompat="@drawable/google" />
 
         <ImageView
             android:id="@+id/linkedinCaro"
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginEnd="8dp"
-            app:srcCompat="@drawable/linkedin"
-            />
+            app:srcCompat="@drawable/linkedin" />
     </LinearLayout>
 
     <ImageView
@@ -224,44 +219,40 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/textCristian"
-        app:layout_constraintStart_toStartOf="@id/textCristian"
-        app:layout_constraintEnd_toEndOf="@id/textCristian"
         android:layout_marginTop="0sp"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/textCristian"
+        app:layout_constraintStart_toStartOf="@id/textCristian"
+        app:layout_constraintTop_toBottomOf="@id/textCristian">
 
         <ImageView
             android:id="@+id/instagramCritstian"
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginEnd="8dp"
-            app:srcCompat="@drawable/instagram"
-            />
+            app:srcCompat="@drawable/instagram" />
 
         <ImageView
             android:id="@+id/facebookCristian"
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginEnd="8dp"
-            app:srcCompat="@drawable/facebook"
-            />
+            app:srcCompat="@drawable/facebook" />
 
         <ImageView
             android:id="@+id/googleCristian"
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginEnd="8dp"
-            app:srcCompat="@drawable/google"
-            />
+            app:srcCompat="@drawable/google" />
 
         <ImageView
             android:id="@+id/linkedinCristian"
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginEnd="8dp"
-            app:srcCompat="@drawable/linkedin"
-            />
+            app:srcCompat="@drawable/linkedin" />
 
     </LinearLayout>
 
@@ -297,44 +288,40 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/textMar"
-        app:layout_constraintStart_toStartOf="@id/textMar"
-        app:layout_constraintEnd_toEndOf="@id/textMar"
         android:layout_marginTop="0sp"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/textMar"
+        app:layout_constraintStart_toStartOf="@id/textMar"
+        app:layout_constraintTop_toBottomOf="@id/textMar">
 
         <ImageView
             android:id="@+id/instagramMar"
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginEnd="8dp"
-            app:srcCompat="@drawable/instagram"
-            />
+            app:srcCompat="@drawable/instagram" />
 
         <ImageView
             android:id="@+id/facebookMar"
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginEnd="8dp"
-            app:srcCompat="@drawable/facebook"
-            />
+            app:srcCompat="@drawable/facebook" />
 
         <ImageView
             android:id="@+id/googleMar"
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginEnd="8dp"
-            app:srcCompat="@drawable/google"
-            />
+            app:srcCompat="@drawable/google" />
 
         <ImageView
             android:id="@+id/linkedinMar"
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginEnd="8dp"
-            app:srcCompat="@drawable/linkedin"
-            />
+            app:srcCompat="@drawable/linkedin" />
 
     </LinearLayout>
 
@@ -372,44 +359,40 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/textMaria"
-        app:layout_constraintStart_toStartOf="@id/textMaria"
-        app:layout_constraintEnd_toEndOf="@id/textMaria"
         android:layout_marginTop="0sp"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/textMaria"
+        app:layout_constraintStart_toStartOf="@id/textMaria"
+        app:layout_constraintTop_toBottomOf="@id/textMaria">
 
         <ImageView
             android:id="@+id/instagramMaria"
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginEnd="8dp"
-            app:srcCompat="@drawable/instagram"
-            />
+            app:srcCompat="@drawable/instagram" />
 
         <ImageView
             android:id="@+id/facebookMaria"
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginEnd="8dp"
-            app:srcCompat="@drawable/facebook"
-            />
+            app:srcCompat="@drawable/facebook" />
 
         <ImageView
             android:id="@+id/googleMaria"
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginEnd="8dp"
-            app:srcCompat="@drawable/google"
-            />
+            app:srcCompat="@drawable/google" />
 
         <ImageView
             android:id="@+id/linkedinMaria"
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginEnd="8dp"
-            app:srcCompat="@drawable/linkedin"
-            />
+            app:srcCompat="@drawable/linkedin" />
 
     </LinearLayout>
 
@@ -445,50 +428,42 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/textMayra"
-        app:layout_constraintStart_toStartOf="@id/textMayra"
-        app:layout_constraintEnd_toEndOf="@id/textMayra"
         android:layout_marginTop="0sp"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/textMayra"
+        app:layout_constraintStart_toStartOf="@id/textMayra"
+        app:layout_constraintTop_toBottomOf="@id/textMayra">
 
         <ImageView
             android:id="@+id/instagramMayra"
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginEnd="8dp"
-            app:srcCompat="@drawable/instagram"
-            />
+            app:srcCompat="@drawable/instagram" />
 
         <ImageView
             android:id="@+id/facebookMayra"
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginEnd="8dp"
-            app:srcCompat="@drawable/facebook"
-            />
+            app:srcCompat="@drawable/facebook" />
 
         <ImageView
             android:id="@+id/googleMayra"
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginEnd="8dp"
-            app:srcCompat="@drawable/google"
-            />
+            app:srcCompat="@drawable/google" />
 
         <ImageView
             android:id="@+id/linkedinMayra"
             android:layout_width="25dp"
             android:layout_height="30dp"
             android:layout_marginEnd="8dp"
-            app:srcCompat="@drawable/linkedin"
-            />
+            app:srcCompat="@drawable/linkedin" />
 
     </LinearLayout>
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

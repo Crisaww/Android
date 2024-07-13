@@ -2,6 +2,7 @@ package com.example.mockuptaller
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -17,7 +18,7 @@ class como_usar_tuvooz : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        var btnVolver = findViewById<Button>(R.id.btnVolver)
+        var btnVolver = findViewById<ImageView>(R.id.btnVolver)
         btnVolver.setOnClickListener{
             /*
             finish elimina o cierra la activity actual

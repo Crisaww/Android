@@ -24,7 +24,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/cerrarSesion"
         android:layout_width="49dp"
         android:layout_height="57dp"
         android:src="@drawable/cerrar_sesion"
@@ -57,6 +57,7 @@
         android:layout_height="55dp"
         android:layout_marginTop="160dp"
         android:backgroundTint="#49117A"
+        android:onClick="escribir"
         android:text="Texto"
         android:textColor="@color/white"
         app:icon="@drawable/edit_major_svgrepo_com"
@@ -75,6 +76,7 @@
         android:layout_height="54dp"
         android:layout_marginTop="160dp"
         android:backgroundTint="#49117A"
+        android:onClick="frasesYPalabras"
         android:text="Frases y Palabras"
         android:textColor="@color/white"
         app:icon="@drawable/categoria"
@@ -93,7 +95,7 @@
         android:layout_height="58dp"
         android:layout_marginTop="160dp"
         android:backgroundTint="#49117A"
-        android:onClick="QuienesSomos"
+        android:onClick="quienesSomos"
         android:text="¿Quiénes somos?"
         android:textColor="@color/white"
         app:icon="@drawable/user_groups_svgrepo_com"
@@ -111,6 +113,7 @@
         android:layout_height="57dp"
         android:layout_marginTop="160dp"
         android:backgroundTint="#49117A"
+        android:onClick="manual"
         android:text="¿Cómo usar TuVooz?"
         android:textColor="@color/white"
         app:icon="@drawable/computer_manual_svgrepo_com"

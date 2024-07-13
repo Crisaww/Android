@@ -269,6 +269,7 @@
         android:layout_width="175dp"
         android:layout_height="52dp"
         android:backgroundTint="@color/morado2"
+        android:onClick="registrarse"
         android:text="Registrarse"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -24,4 +24,10 @@ class crear_cuenta: AppCompatActivity() {
         val intent = Intent(this, iniciar_sesion::class.java)
         startActivity(intent)
     }
+    fun registrarse(view: View) {
+        //se configura el cambio activity
+        var intent = Intent(application, inicio_pagina::class.java)
+        //se ejecuta la actividad
+        startActivity(intent)
+    }
 }
