@@ -16,8 +16,15 @@
             android:name=".MainActivity4"
             android:exported="false" />
         <activity
-            android:name=".MainActivity3"
+            android:name=".como_usar_tuvooz"
             android:exported="false" />
+        <activity
+            android:name=".quienes_somos"
+            android:exported="false" />
+        <activity
+            android:name=".crear_cuenta"
+            android:exported="false" />
+
         <activity
             android:name=".inicio_pagina"
             android:exported="false" />
