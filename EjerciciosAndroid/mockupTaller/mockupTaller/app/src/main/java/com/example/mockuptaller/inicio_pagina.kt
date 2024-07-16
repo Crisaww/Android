@@ -1,5 +1,6 @@
 package com.example.mockuptaller
 
+import android.app.Dialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -61,9 +62,57 @@ class inicio_pagina: AppCompatActivity() {
 
     fun configuracion(view: View) {
         //se configura el cambio activity
-        var intent = Intent(application, ventana_emergente::class.java)
+       /* var intent = Intent(application, ventana_emergente::class.java)
         //se ejecuta la actividad
         startActivity(intent)
+        */
+
+        // Crear el AlertDialog
+        /*val builder = AlertDialog.Builder(this)
+        builder.setTitle("Título del AlertDialog")
+        builder.setMessage("Mensaje del AlertDialog")
+        builder.setPositiveButton("Aceptar") { dialog, which ->
+            // Acción cuando el usuario presiona "Aceptar"
+        }
+        builder.setNegativeButton("Cancelar") { dialog, which ->
+            // Acción cuando el usuario presiona "Cancelar"
+        }
+
+        // Mostrar el AlertDialog
+        val dialog: AlertDialog = builder.create()
+        dialog.show()*/
+
+        val inflater = layoutInflater
+        val dialogView = inflater.inflate(R.layout.ventana_emergente, null)
+
+        // Crear el AlertDialog
+        val builder = AlertDialog.Builder(this)
+        builder.setView(dialogView)
+
+        // Configurar botones y acciones
+        val dialog: AlertDialog = builder.create()
+
+        // Obtener referencias a los botones del layout inflado
+        val btnMiCuenta = dialogView.findViewById<Button>(R.id.btnMiCuenta)
+        val btnAccesibilidad = dialogView.findViewById<Button>(R.id.btnAccesibilidad)
+        val btnContrasena = dialogView.findViewById<Button>(R.id.btnContrasena)
+
+        // Configurar acciones de los botones
+        btnMiCuenta.setOnClickListener {
+            // Acción cuando el usuario presiona "Mi cuenta"
+        }
+
+        btnAccesibilidad.setOnClickListener {
+            // Acción cuando el usuario presiona "Accesibilidad"
+        }
+
+        btnContrasena.setOnClickListener {
+            // Acción cuando el usuario presiona "Contraseña"
+        }
+
+        // Mostrar el AlertDialog
+        dialog.show()
+
     }
 
 

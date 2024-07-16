@@ -1,77 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="16dp"
+    android:id="@+id/main"
     android:background="@android:color/transparent">
 
-        <androidx.cardview.widget.CardView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/degradado"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:background="@android:color/white"
-            android:elevation="8dp">
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#806F6F"
-                    android:orientation="vertical"
-                    android:padding="16dp">
+            <ImageView
+                android:id="@+id/cerrarVentana"
+                android:layout_width="41dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/close_circle_svgrepo_com"
+                android:contentDescription="Cerrar" />
 
-                        <ImageView
-                            android:layout_width="41dp"
-                            android:layout_height="32dp"
-                            android:layout_marginEnd="16dp"
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Configuración"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAlignment="center" />
 
-                            android:src="@drawable/close_circle_svgrepo_com" />
+        </LinearLayout>
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="Configuracion"
-                            android:textSize="18sp" />
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/darker_gray" />-->
 
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:layout_marginTop="8dp"
-                            android:layout_marginBottom="8dp"
-                            android:background="@android:color/darker_gray" />
+        <Button
+            android:id="@+id/btnMiCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/morado4"
+            android:gravity="start"
+            android:padding="16dp"
+            android:text="Mi cuenta"
+            android:textColor="@android:color/black" />
 
+        <Button
+            android:id="@+id/btnAccesibilidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/morado4"
+            android:gravity="start"
+            android:padding="16dp"
+            android:text="Accesibilidad"
+            android:textColor="@android:color/black" />
 
-                        <Button
-                            android:id="@+id/btnMiCuenta"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:backgroundTint="#FF0000"
-                            android:gravity="start"
-                            android:padding="16dp"
-                            android:text="Mi cuenta"
-                            android:textColor="@android:color/black" />
+        <Button
+            android:id="@+id/btnContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/morado4"
+            android:gravity="start"
+            android:padding="16dp"
+            android:text="Contraseña"
+            android:textColor="@android:color/black" />
 
-                        <Button
-                            android:id="@+id/btnAccesibilidad"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:backgroundTint="#F88282"
-                            android:gravity="start"
-                            android:padding="16dp"
-                            android:text="Accesibilidad"
-                            android:textColor="@android:color/black" />
-
-                        <Button
-                            android:id="@+id/btnContrasena"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:backgroundTint="#D11111"
-                            android:gravity="start"
-                            android:padding="16dp"
-                            android:text="Contraseña"
-                            android:textColor="@android:color/black" />
-
-                </LinearLayout>
-        </androidx.cardview.widget.CardView>
+    </LinearLayout>
 </LinearLayout>
-

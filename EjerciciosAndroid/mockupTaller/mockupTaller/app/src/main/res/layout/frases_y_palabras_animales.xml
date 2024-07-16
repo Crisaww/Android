@@ -69,75 +69,75 @@
         android:layout_marginTop="16dp"
         android:alignmentMode="alignMargins"
         android:columnCount="3"
-        android:rowCount="7"
         android:padding="16dp"
+        android:rowCount="7"
         app:layout_constraintTop_toBottomOf="@+id/view2">
 
-        <!-- Primera fila -->
+
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:backgroundTint="#E0C8FF"
             android:text="Gallina"
-            android:textStyle="bold"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
-            android:textStyle="bold"
             android:backgroundTint="#E0C8FF"
             android:text="Paloma"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
-            android:textStyle="bold"
             android:backgroundTint="#E0C8FF"
             android:text="Araña"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
-        <!-- Segunda fila -->
+
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:backgroundTint="#E0C8FF"
-            android:textStyle="bold"
             android:text="Ratón"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:backgroundTint="#E0C8FF"
-            android:textStyle="bold"
             android:text="Serpiente"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:backgroundTint="#E0C8FF"
-            android:textStyle="bold"
             android:text="Zorro"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
-        <!-- Tercera fila -->
+
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:backgroundTint="#E0C8FF"
             android:text="Pingüino"
-            android:textStyle="bold"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <Button
             android:layout_width="0dp"
@@ -145,27 +145,27 @@
             android:layout_columnWeight="1"
             android:backgroundTint="#E0C8FF"
             android:text="Hipopóta- mo"
-            android:textStyle="bold"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:backgroundTint="#E0C8FF"
-            android:textStyle="bold"
             android:text="Lobo"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
-        <!-- Cuarta fila -->
+
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:backgroundTint="#E0C8FF"
-            android:textStyle="bold"
             android:text="Mariposa"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <Button
             android:layout_width="0dp"
@@ -173,8 +173,8 @@
             android:layout_columnWeight="1"
             android:backgroundTint="#E0C8FF"
             android:text="Puma"
-            android:textStyle="bold"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <Button
             android:layout_width="0dp"
@@ -182,18 +182,18 @@
             android:layout_columnWeight="1"
             android:backgroundTint="#E0C8FF"
             android:text="Cabra"
-            android:textStyle="bold"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
-        <!-- Quinta fila -->
+
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:backgroundTint="#E0C8FF"
             android:text="Oveja"
-            android:textStyle="bold"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <Button
             android:layout_width="0dp"
@@ -201,8 +201,8 @@
             android:layout_columnWeight="1"
             android:backgroundTint="#E0C8FF"
             android:text="Rata"
-            android:textStyle="bold"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <Button
             android:layout_width="0dp"
@@ -210,18 +210,18 @@
             android:layout_columnWeight="1"
             android:backgroundTint="#E0C8FF"
             android:text="Águila"
-            android:textStyle="bold"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
-        <!-- Sexta fila -->
+
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:backgroundTint="#E0C8FF"
             android:text="Cerdo"
-            android:textStyle="bold"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <Button
             android:layout_width="0dp"
@@ -229,8 +229,8 @@
             android:layout_columnWeight="1"
             android:backgroundTint="#E0C8FF"
             android:text="Elefante"
-            android:textStyle="bold"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <Button
             android:layout_width="0dp"
@@ -238,18 +238,18 @@
             android:layout_columnWeight="1"
             android:backgroundTint="#E0C8FF"
             android:text="Tortuga"
-            android:textStyle="bold"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
-        <!-- Séptima fila -->
+
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:backgroundTint="#E0C8FF"
             android:text="Delfín"
-            android:textStyle="bold"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <Button
             android:layout_width="0dp"
@@ -257,16 +257,17 @@
             android:layout_columnWeight="1"
             android:backgroundTint="#E0C8FF"
             android:text="Perro"
-            android:textStyle="bold"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:backgroundTint="#E0C8FF"
-            android:textStyle="bold"
             android:text="Gato"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
     </GridLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

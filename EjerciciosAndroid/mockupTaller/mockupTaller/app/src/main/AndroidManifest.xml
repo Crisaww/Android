@@ -48,13 +48,6 @@
             android:exported="false" />
 
         <activity
-            android:name=".inicio_pagina_class"
-            android:exported="false" />
-
-
-
-
-        <activity
             android:name=".iniciar_sesion"
             android:exported="true">
 
