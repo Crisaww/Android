@@ -5,7 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     android:backgroundTint="@color/white"
     tools:context=".frases_y_palabras_animales">
 
@@ -63,221 +62,317 @@
         app:layout_constraintVertical_bias="0.011" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnGallina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="119dp" />
+        android:backgroundTint="#E0C8FF"
+        android:backgroundTintMode="screen"
+        android:text="Gallina"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124" />
 
-    <!-- GridLayout for buttons -->
-    <!--<GridLayout
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/btnPaloma"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:alignmentMode="alignMargins"
-        android:columnCount="3"
-        android:padding="16dp"
-        android:rowCount="7"
-        app:layout_constraintTop_toBottomOf="@+id/view2">
+        android:backgroundTint="#E0C8FF"
+        android:text="Paloma"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124" />
 
+    <Button
+        android:id="@+id/btnAraña"
+        android:layout_width="wrap_content"
+        android:backgroundTint="#E0C8FF"
+        android:layout_height="wrap_content"
+        android:text="Araña"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124" />
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#E0C8FF"
-            android:text="Gallina"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnRatón"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ratón"
+        android:backgroundTint="#E0C8FF"
+        android:textColor="#000000"
+        app:cornerRadius="10dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237" />
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#E0C8FF"
-            android:text="Paloma"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnSerpiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Serpiente"
+        android:textColor="#000000"
+        app:cornerRadius="10dp"
+        android:backgroundTint="#E0C8FF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237" />
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#E0C8FF"
-            android:text="Araña"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnZorro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zorro"
+        android:textColor="#000000"
+        app:cornerRadius="10dp"
+        android:textStyle="bold"
+        android:backgroundTint="#E0C8FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237" />
 
+    <Button
+        android:id="@+id/btnPingüino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pingüino"
+        android:textColor="#000000"
+        app:cornerRadius="10dp"
+        android:textStyle="bold"
+        android:backgroundTint="#E0C8FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.344" />
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#E0C8FF"
-            android:text="Ratón"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnHipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hipopótamo"
+        android:textColor="#000000"
+        android:backgroundTint="#E0C8FF"
+        app:cornerRadius="10dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.344" />
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#E0C8FF"
-            android:text="Serpiente"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnLobo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lobo"
+        android:textColor="#000000"
+        android:backgroundTint="#E0C8FF"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.344" />
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#E0C8FF"
-            android:text="Zorro"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnMariposa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mariposa"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:backgroundTint="#E0C8FF"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.446" />
 
+    <Button
+        android:id="@+id/btnPuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puma"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:backgroundTint="#E0C8FF"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.446" />
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#E0C8FF"
-            android:text="Pingüino"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnCabra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cabra"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:backgroundTint="#E0C8FF"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.446" />
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#E0C8FF"
-            android:text="Hipopóta- mo"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnOveja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oveja"
+        android:textColor="#000000"
+        android:backgroundTint="#E0C8FF"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.547" />
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#E0C8FF"
-            android:text="Lobo"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnRata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rata"
+        android:textColor="#000000"
+        android:backgroundTint="#E0C8FF"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.547" />
 
+    <Button
+        android:id="@+id/btnÁguila"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Águila"
+        android:textColor="#000000"
+        android:backgroundTint="#E0C8FF"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.547" />
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#E0C8FF"
-            android:text="Mariposa"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnCerdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cerdo"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        android:backgroundTint="#E0C8FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#E0C8FF"
-            android:text="Puma"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnElefante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elefante"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        android:backgroundTint="#E0C8FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#E0C8FF"
-            android:text="Cabra"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnTortuga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tortuga"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:backgroundTint="#E0C8FF"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
 
+    <Button
+        android:id="@+id/btnDelfín"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delfín"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:backgroundTint="#E0C8FF"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.749" />
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#E0C8FF"
-            android:text="Oveja"
-            android:textColor="#000000"
-            android:textStyle="bold" />
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#E0C8FF"
-            android:text="Rata"
-            android:textColor="#000000"
-            android:textStyle="bold" />
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#E0C8FF"
-            android:text="Águila"
-            android:textColor="#000000"
-            android:textStyle="bold" />
-
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#E0C8FF"
-            android:text="Cerdo"
-            android:textColor="#000000"
-            android:textStyle="bold" />
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#E0C8FF"
-            android:text="Elefante"
-            android:textColor="#000000"
-            android:textStyle="bold" />
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#E0C8FF"
-            android:text="Tortuga"
-            android:textColor="#000000"
-            android:textStyle="bold" />
-
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#E0C8FF"
-            android:text="Delfín"
-            android:textColor="#000000"
-            android:textStyle="bold" />
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#E0C8FF"
-            android:text="Perro"
-            android:textColor="#000000"
-            android:textStyle="bold" />
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#E0C8FF"
-            android:text="Gato"
-            android:textColor="#000000"
-            android:textStyle="bold" />
-    </GridLayout>
--->
-
-
+    <Button
+        android:id="@+id/btnPerro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perro"
+        android:textColor="#000000"
+        android:backgroundTint="#E0C8FF"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.749" />
 </androidx.constraintlayout.widget.ConstraintLayout>
