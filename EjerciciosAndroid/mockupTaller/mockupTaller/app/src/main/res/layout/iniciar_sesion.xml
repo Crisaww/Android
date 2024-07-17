@@ -13,8 +13,8 @@
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
             android:src="@drawable/fondo"
-            tools:layout_editor_absoluteX="-16dp"
-            tools:layout_editor_absoluteY="0dp" />
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="16dp" />
 
         <ImageView
             android:id="@+id/imageView4"
@@ -98,57 +98,42 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.564" />
 
+        <!-- Botón de Iniciar Sesión con esquinas redondeadas -->
+
         <TextView
             android:id="@+id/txtCuenta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="4dp"
+            android:layout_margin="10sp"
             android:fontFamily="@font/open_sans_bold"
             android:text="¿No tienes una cuenta?"
             android:textColor="@color/white"
             android:textSize="12sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.387"
+            app:layout_constraintEnd_toStartOf="@+id/Registrarse"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.731" />
-
-        <!-- Botón de Iniciar Sesión con esquinas redondeadas -->
+            app:layout_constraintVertical_bias="0.738" />
 
         <TextView
-            android:id="@+id/txtRegistrarte"
+            android:id="@+id/Registrarse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="10sp"
             android:fontFamily="@font/open_sans_bold"
+            android:onClick="crearCuenta"
             android:text="Regístrate"
             android:textColor="@color/azul1"
             android:textSize="12sp"
             android:textStyle="bold"
-            android:onClick="crearCuenta"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/txtIniciar"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.793"
+            app:layout_constraintHorizontal_bias="0.744"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.731" />
-
-        <TextView
-            android:id="@+id/txtIniciar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_light"
-            android:text=" Iniciar sesión con Google"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.712"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.822" />
+            app:layout_constraintVertical_bias="0.944" />
 
         <TextView
             android:id="@+id/txtIniciarFacebook"
@@ -161,10 +146,27 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.772"
+            app:layout_constraintHorizontal_bias="0.679"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.899" />
+            app:layout_constraintVertical_bias="0.892" />
+
+        <TextView
+            android:id="@+id/txtIniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/poppins_light"
+            android:text=" Iniciar sesión con Google"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtIniciarFacebook"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.626"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.967" />
 
         <EditText
             android:id="@+id/editTextTextPassword"
@@ -220,27 +222,27 @@
             app:layout_constraintVertical_bias="0.649" />
 
         <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="32dp"
-            android:layout_height="30dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.273"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.82"
-            app:srcCompat="@drawable/googlelogo" />
-
-        <ImageView
             android:id="@+id/imageView12"
-            android:layout_width="49dp"
+            android:layout_width="41dp"
             android:layout_height="41dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.256"
+            app:layout_constraintEnd_toStartOf="@+id/txtIniciarFacebook"
+            app:layout_constraintHorizontal_bias="0.819"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11"
+            app:layout_constraintVertical_bias="0.115"
+            app:srcCompat="@drawable/logofacebook" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txtIniciar"
+            app:layout_constraintHorizontal_bias="0.811"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.91"
-            app:srcCompat="@drawable/logofacebook" />
+            app:layout_constraintVertical_bias="0.827"
+            app:srcCompat="@drawable/googlelogo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
