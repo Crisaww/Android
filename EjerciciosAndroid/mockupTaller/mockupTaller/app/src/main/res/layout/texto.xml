@@ -24,28 +24,33 @@
 
     <ImageView
         android:id="@+id/btnVolver"
-        android:layout_width="45dp"
-        android:layout_height="42dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/flecha_volver"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintHorizontal_bias="0.050"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.01" />
 
     <TextView
         android:id="@+id/texto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="103dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/fuente_poppins_medium"
         android:text="Texto"
         android:textColor="@color/white"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toEndOf="@+id/btnVolver"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
