@@ -48,6 +48,17 @@
             android:exported="false" />
 
         <activity
+            android:name=".configuracion_mi_cuenta"
+            android:exported="false" />
+
+        <activity
+            android:name=".configuracion_accesibilidad"
+            android:exported="false" />
+        <activity
+            android:name=".configuracion_contra"
+            android:exported="false" />
+
+        <activity
             android:name=".iniciar_sesion"
             android:exported="true">
 

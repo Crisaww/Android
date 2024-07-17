@@ -61,27 +61,6 @@ class inicio_pagina: AppCompatActivity() {
     }
 
     fun configuracion(view: View) {
-        //se configura el cambio activity
-       /* var intent = Intent(application, ventana_emergente::class.java)
-        //se ejecuta la actividad
-        startActivity(intent)
-        */
-
-        // Crear el AlertDialog
-        /*val builder = AlertDialog.Builder(this)
-        builder.setTitle("Título del AlertDialog")
-        builder.setMessage("Mensaje del AlertDialog")
-        builder.setPositiveButton("Aceptar") { dialog, which ->
-            // Acción cuando el usuario presiona "Aceptar"
-        }
-        builder.setNegativeButton("Cancelar") { dialog, which ->
-            // Acción cuando el usuario presiona "Cancelar"
-        }
-
-        // Mostrar el AlertDialog
-        val dialog: AlertDialog = builder.create()
-        dialog.show()*/
-
         val inflater = layoutInflater
         val dialogView = inflater.inflate(R.layout.ventana_emergente, null)
 
@@ -96,25 +75,37 @@ class inicio_pagina: AppCompatActivity() {
         val btnMiCuenta = dialogView.findViewById<Button>(R.id.btnMiCuenta)
         val btnAccesibilidad = dialogView.findViewById<Button>(R.id.btnAccesibilidad)
         val btnContrasena = dialogView.findViewById<Button>(R.id.btnContrasena)
+        val cerrarVentana = dialogView.findViewById<ImageView>(R.id.cerrarVentana)
 
         // Configurar acciones de los botones
         btnMiCuenta.setOnClickListener {
             // Acción cuando el usuario presiona "Mi cuenta"
+            val intent = Intent(application, configuracion_mi_cuenta::class.java)
+            startActivity(intent)
+            dialog.dismiss()
         }
 
         btnAccesibilidad.setOnClickListener {
             // Acción cuando el usuario presiona "Accesibilidad"
+            val intent = Intent(application, configuracion_accesibilidad::class.java)
+            startActivity(intent)
+            dialog.dismiss()
         }
 
         btnContrasena.setOnClickListener {
             // Acción cuando el usuario presiona "Contraseña"
+            val intent = Intent(application, configuracion_contra::class.java)
+            startActivity(intent)
+            dialog.dismiss()
+        }
+
+        cerrarVentana.setOnClickListener {
+            // Acción cuando el usuario presiona "Contraseña"
+            dialog.dismiss()
         }
 
         // Mostrar el AlertDialog
         dialog.show()
 
     }
-
-
-
 }
