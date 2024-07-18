@@ -64,8 +64,6 @@
         app:layout_constraintStart_toEndOf="@+id/btnVolver"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.6" />
-
-<<<<<<< HEAD
     <GridLayout
         android:id="@+id/gridLayout"
         android:layout_width="match_parent"
@@ -78,14 +76,8 @@
         app:layout_constraintTop_toBottomOf="@+id/view2">
 
         <!-- Primera fila -->
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#E0C8FF"
-            android:text="Feliz"
-            android:textColor="#000000"
-            android:textStyle="bold"/>
+
+
 
         <Button
             android:layout_width="0dp"
