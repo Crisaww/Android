@@ -69,9 +69,9 @@
         android:id="@+id/btnAdios"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="88dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="84dp"
         android:backgroundTint="#E0C8FF"
         android:text="Adios"
         android:textColor="#000000"
@@ -81,6 +81,51 @@
         app:layout_constraintEnd_toStartOf="@+id/btnHastaLuego"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCuidate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#E0C8FF"
+        android:text="Cuidate"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnQueGustoVerte" />
+
+    <Button
+        android:id="@+id/btnQueTeVayaBien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#E0C8FF"
+        android:text="Que te vaya bien"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCuidate" />
+
+    <Button
+        android:id="@+id/btnQueGustoVerte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#E0C8FF"
+        android:text="Que gusto verte"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdios" />
 
     <Button
         android:id="@+id/btnHastaLuego"
@@ -100,26 +145,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnQueGustoVerte"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="#E0C8FF"
-        android:text="Que gusto verte"
-        android:textColor="#000000"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:cornerRadius="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAdios" />
-
-    <Button
         android:id="@+id/btnChao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="76dp"
+        android:layout_marginEnd="60dp"
         android:backgroundTint="#E0C8FF"
         android:text="Chao"
         android:textColor="#000000"
@@ -130,26 +160,11 @@
         app:layout_constraintTop_toBottomOf="@+id/btnHastaLaProxima" />
 
     <Button
-        android:id="@+id/btnQueTeVayaBien"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="#E0C8FF"
-        android:text="Que te vaya bien"
-        android:textColor="#000000"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:cornerRadius="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCuidate" />
-
-    <Button
         android:id="@+id/btnQueTengasUnBuenDia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="12dp"
+        android:layout_marginEnd="4dp"
         android:backgroundTint="#E0C8FF"
         android:text="Que tengas un buen dia"
         android:textColor="#000000"
@@ -177,22 +192,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnQueTeVayaBien"
-        app:layout_constraintVertical_bias="0.05" />
-
-    <Button
-        android:id="@+id/btnCuidate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="#E0C8FF"
-        android:text="Cuidate"
-        android:textColor="#000000"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:cornerRadius="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnQueGustoVerte" />
+        app:layout_constraintVertical_bias="0.019" />
 
     <Button
         android:id="@+id/btnHastaLaProxima"
