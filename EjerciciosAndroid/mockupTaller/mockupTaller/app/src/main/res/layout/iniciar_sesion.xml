@@ -50,7 +50,6 @@
             android:background="@drawable/estilo_borde_text"
             android:backgroundTint="@color/morado4"
             android:ems="10"
-            app:cornerRadius="10dp"
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:fontFamily="@font/poppins_light"
@@ -60,30 +59,13 @@
             android:textColorHint="#000000"
             android:textIsSelectable="false"
             android:textSize="14sp"
+            app:cornerRadius="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.476"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.359" />
-
-        <TextView
-            android:id="@+id/txtContraseña"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/dmsans_regular"
-            android:text="Contraseña"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.122"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtApellido"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.337" />
 
         <TextView
             android:id="@+id/txtOlvidoContra"
@@ -142,6 +124,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.73" />
 
+
         <EditText
             android:id="@+id/editTextTextPassword"
             android:layout_width="279dp"
@@ -150,7 +133,6 @@
             android:backgroundTint="@color/morado4"
             android:ems="10"
             android:focusable="true"
-            app:cornerRadius="10dp"
             android:focusableInTouchMode="true"
             android:fontFamily="@font/poppins_light"
             android:hint="Ingrese su contraseña"
@@ -159,12 +141,31 @@
             android:textColorHint="#000000"
             android:textIsSelectable="false"
             android:textSize="14sp"
+            app:cornerRadius="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.469"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.472" />
 
+        <TextView
+            android:id="@+id/txtContraseña"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/dmsans_regular"
+            android:text="Contraseña"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtApellido"
+            app:layout_constraintVertical_bias="1.0" />
 
         <TextView
             android:id="@+id/textView2"
