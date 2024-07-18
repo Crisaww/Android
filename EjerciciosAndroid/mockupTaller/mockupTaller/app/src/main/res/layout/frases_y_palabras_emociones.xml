@@ -24,43 +24,205 @@
 
     <ImageView
         android:id="@+id/btnVolver"
-        android:layout_width="45dp"
-        android:layout_height="42dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:background="@drawable/flecha_volver"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintHorizontal_bias="0.050"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.01" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageInicio"
-        android:layout_width="43dp"
-        android:layout_height="42dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:src="@drawable/home_house_ui_svgrepo_com"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.986"
+        app:layout_constraintHorizontal_bias="0.946"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.01" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- GridLayout for buttons -->
 
     <TextView
         android:id="@+id/textfrases_emociones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/fuente_poppins_medium"
         android:text="Frases y palabras - Emociones"
         android:textColor="@color/white"
         android:textSize="19sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.53"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toStartOf="@+id/imageInicio"
+        app:layout_constraintStart_toEndOf="@+id/btnVolver"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.011" />
+        app:layout_constraintVertical_bias="0.6" />
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:rowCount="9"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/view2">
+
+        <!-- Primera fila -->
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#E0C8FF"
+            android:text="Triste"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <!-- Segunda fila -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#E0C8FF"
+            android:text="Disgustado"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#E0C8FF"
+            android:text="Relajado"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <!-- Tercera fila -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#E0C8FF"
+            android:textStyle="bold"
+            android:text="Desconcertado"
+            android:textColor="#000000" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#E0C8FF"
+            android:text="Melancólico"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <!-- Cuarta fila -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#E0C8FF"
+            android:text="Cansado"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#E0C8FF"
+            android:text="Agobiado"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <!-- Quinta fila -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#E0C8FF"
+            android:text="Optimista"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#E0C8FF"
+            android:text="Emocionado"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <!-- Sexta fila -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#E0C8FF"
+            android:text="Sorprendido"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#E0C8FF"
+            android:text="Desanimado"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <!-- Séptima fila -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#E0C8FF"
+            android:text="Preocupado"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#E0C8FF"
+            android:text="Intrigado"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <!-- Octava fila -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#E0C8FF"
+            android:text="Curioso"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#E0C8FF"
+            android:text="Satisfecho"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+    </GridLayout>
+
 
     <Button
         android:id="@+id/btnFeliz"
