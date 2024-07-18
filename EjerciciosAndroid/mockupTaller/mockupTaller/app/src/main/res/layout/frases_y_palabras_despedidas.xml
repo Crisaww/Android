@@ -74,9 +74,11 @@
         android:layout_marginTop="88dp"
         android:layout_marginEnd="8dp"
         android:backgroundTint="#E0C8FF"
-        android:textStyle="bold"
         android:text="Adios"
         android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
         app:layout_constraintEnd_toStartOf="@+id/btnHastaLuego"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -89,9 +91,11 @@
         android:layout_marginTop="88dp"
         android:layout_marginEnd="8dp"
         android:backgroundTint="#E0C8FF"
-        android:textStyle="bold"
         android:text="Hasta luego"
         android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnAdios"
         app:layout_constraintTop_toTopOf="parent" />
@@ -101,50 +105,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#E0C8FF"
-        android:textStyle="bold"
         android:text="Que gusto verte"
         android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAdios" />
-
-    <Button
-        android:id="@+id/btnHastaLaProxima"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="44dp"
-        android:backgroundTint="#E0C8FF"
-        android:text="Hasta la próxima"
-        android:textStyle="bold"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnHastaLuego" />
-
-    <Button
-        android:id="@+id/btnCuidate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="36dp"
-        android:backgroundTint="#E0C8FF"
-        android:text="Cuidate"
-        android:textStyle="bold"
-        android:textColor="#000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnQueGustoVerte" />
 
     <Button
         android:id="@+id/btnChao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="80dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="76dp"
         android:backgroundTint="#E0C8FF"
         android:text="Chao"
         android:textColor="#000000"
+        android:textSize="14sp"
         android:textStyle="bold"
+        app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnHastaLaProxima" />
 
@@ -153,11 +135,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#E0C8FF"
         android:text="Que te vaya bien"
         android:textColor="#000000"
+        android:textSize="14sp"
         android:textStyle="bold"
+        app:cornerRadius="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCuidate" />
 
@@ -165,12 +149,14 @@
         android:id="@+id/btnQueTengasUnBuenDia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
         android:backgroundTint="#E0C8FF"
         android:text="Que tengas un buen dia"
         android:textColor="#000000"
+        android:textSize="14sp"
         android:textStyle="bold"
+        app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnChao" />
 
@@ -184,12 +170,44 @@
         android:backgroundTint="#E0C8FF"
         android:text="Te veo luego"
         android:textColor="#000000"
+        android:textSize="14sp"
         android:textStyle="bold"
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnQueTeVayaBien"
-        app:layout_constraintVertical_bias="0.046" />
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/btnCuidate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#E0C8FF"
+        android:text="Cuidate"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnQueGustoVerte" />
+
+    <Button
+        android:id="@+id/btnHastaLaProxima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="#E0C8FF"
+        android:text="Hasta la próxima"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHastaLuego" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
