@@ -151,8 +151,8 @@
 
     <Button
         android:id="@+id/btnDesconcertado"
-        android:layout_width="138dp"
-        android:layout_height="47dp"
+        android:layout_width="141dp"
+        android:layout_height="51dp"
         android:backgroundTint="#E0C8FF"
         android:text="Desconcertado"
         android:textColor="#000000"
@@ -161,7 +161,7 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.657" />
@@ -181,7 +181,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.852" />
+        app:layout_constraintVertical_bias="0.843" />
 
     <Button
         android:id="@+id/btnSereno"
@@ -270,8 +270,8 @@
 
     <Button
         android:id="@+id/btnAvergonzado"
-        android:layout_width="136dp"
-        android:layout_height="43dp"
+        android:layout_width="130dp"
+        android:layout_height="42dp"
         android:backgroundTint="#E0C8FF"
         android:text="Avergonzado"
         android:textColor="#000000"
@@ -280,10 +280,10 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.985"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.215" />
+        app:layout_constraintVertical_bias="0.214" />
 
     <Button
         android:id="@+id/btnDesanimado"
@@ -297,10 +297,10 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintHorizontal_bias="0.023"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.657" />
+        app:layout_constraintVertical_bias="0.658" />
 
     <Button
         android:id="@+id/btnCansado"
@@ -321,7 +321,7 @@
 
     <Button
         android:id="@+id/btnAgradecido"
-        android:layout_width="114dp"
+        android:layout_width="124dp"
         android:layout_height="49dp"
         android:backgroundTint="#E0C8FF"
         android:text="Agradecido"
@@ -331,10 +331,10 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.962"
+        app:layout_constraintHorizontal_bias="0.986"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.659" />
+        app:layout_constraintVertical_bias="0.655" />
 
     <Button
         android:id="@+id/btnSatisfecho"
