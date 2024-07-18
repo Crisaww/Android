@@ -40,6 +40,38 @@
             android:exported="false" />
 
         <activity
+            android:name=".frases_y_palabras_animales"
+            android:exported="false" />
+
+        <activity
+            android:name=".frases_y_palabras_conectores"
+            android:exported="false" />
+
+        <activity
+            android:name=".frases_y_palabras_despedidas"
+            android:exported="false" />
+
+        <activity
+            android:name=".frases_y_palabras_emociones"
+            android:exported="false" />
+
+        <activity
+            android:name=".frases_y_palabras_favoritos"
+            android:exported="false" />
+
+        <activity
+            android:name=".frases_y_palabras_preguntas"
+            android:exported="false" />
+
+        <activity
+            android:name=".frases_y_palabras_recientes"
+            android:exported="false" />
+
+        <activity
+            android:name=".frases_y_palabras_saludos"
+            android:exported="false" />
+
+        <activity
             android:name=".texto"
             android:exported="false" />
 
