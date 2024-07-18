@@ -53,7 +53,7 @@
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/fuente_poppins_medium"
-        android:text="Frases y palabras - Favoritas"
+        android:text="Frases y palabras - Favoritos"
         android:textColor="@color/white"
         android:textSize="19sp"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
@@ -65,8 +65,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cuadroTextoLayout"
-        android:layout_width="335dp"
-        android:layout_height="195dp"
+        android:layout_width="330dp"
+        android:layout_height="137dp"
         android:layout_marginTop="36dp"
         android:background="@drawable/cuadro_morado_redondeado"
         android:padding="8dp"
@@ -158,7 +158,7 @@
         app:layout_constraintVertical_bias="0.575" />
 
     <Button
-        android:id="@+id/btnQue_onda"
+        android:id="@+id/btnCon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#E0C8FF"
@@ -174,7 +174,7 @@
         app:layout_constraintVertical_bias="0.666" />
 
     <Button
-        android:id="@+id/btnTe_amo"
+        android:id="@+id/btnRaton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#E0C8FF"
@@ -191,7 +191,7 @@
 
 
     <Button
-        android:id="@+id/btnComo_te_fue"
+        android:id="@+id/btn_rata"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#E0C8FF"
@@ -207,7 +207,7 @@
         app:layout_constraintVertical_bias="0.764" />
 
     <Button
-        android:id="@+id/btnJaja"
+        android:id="@+id/btn_puma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#E0C8FF"
@@ -223,7 +223,7 @@
         app:layout_constraintVertical_bias="0.764" />
 
     <Button
-        android:id="@+id/btnBien"
+        android:id="@+id/btn_buenas_tardes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#E0C8FF"
@@ -239,7 +239,7 @@
         app:layout_constraintVertical_bias="0.853" />
 
     <Button
-        android:id="@+id/btnQue"
+        android:id="@+id/btn_Pingüino"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#E0C8FF"
