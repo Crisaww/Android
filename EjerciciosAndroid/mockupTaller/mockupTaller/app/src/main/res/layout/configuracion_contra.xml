@@ -39,7 +39,7 @@ android:backgroundTint="@color/white"
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/fuente_poppins_medium"
@@ -49,7 +49,7 @@ android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintStart_toEndOf="@+id/btnVolver"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.62" />
+        app:layout_constraintVertical_bias="0.571" />
 
     <TextView
         android:id="@+id/textView"
