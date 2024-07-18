@@ -1,5 +1,6 @@
 package com.example.mockuptaller
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -28,6 +29,13 @@ class frases_y_palabras_animales : AppCompatActivity() {
             /*
             finish elimina o cierra la activity actual
              */
+            finish()
+        }
+
+        var volverInicio = findViewById<ImageView>(R.id.imageInicio)
+        volverInicio.setOnClickListener{
+            val intent = Intent(this, inicio_pagina::class.java)
+            startActivity(intent)
             finish()
         }
     }

@@ -23,12 +23,16 @@ class inicio_pagina: AppCompatActivity() {
             insets
         }
 
-        var cerrarSesion = findViewById<ImageView>(R.id.cerrarSesion)
-        cerrarSesion.setOnClickListener{
-            /*
-            finish elimina o cierra la activity actual
-             */
-            finish()
+        val cerrarSesion = findViewById<ImageView>(R.id.cerrarSesion)
+        cerrarSesion.setOnClickListener {
+            // Crear un Intent para iniciar la actividad de iniciar sesión
+            val intent = Intent(this, iniciar_sesion::class.java)
+
+            // Configurar los flags para limpiar el stack y crear una nueva tarea
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+
+            // Iniciar la actividad de iniciar sesión
+            startActivity(intent)
         }
     }
 
