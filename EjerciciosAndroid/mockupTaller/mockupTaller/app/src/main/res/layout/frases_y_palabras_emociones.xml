@@ -82,40 +82,6 @@
         app:layout_constraintVertical_bias="0.294" />
 
     <Button
-        android:id="@+id/btnOptimista"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#E0C8FF"
-        android:text="Optimista"
-        android:textColor="#000000"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        app:cornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.964"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.472" />
-
-    <Button
-        android:id="@+id/btnNervioso"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#E0C8FF"
-        android:text="Nervioso"
-        android:textColor="#000000"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        app:cornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.948"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.385" />
-
-    <Button
         android:id="@+id/btnRelajado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -133,7 +99,7 @@
         app:layout_constraintVertical_bias="0.385" />
 
     <Button
-        android:id="@+id/btnDescontento"
+        android:id="@+id/btnImpaciente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#E0C8FF"
@@ -167,7 +133,7 @@
         app:layout_constraintVertical_bias="0.132" />
 
     <Button
-        android:id="@+id/btnDescontento"
+        android:id="@+id/btnCurioso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#E0C8FF"
@@ -178,13 +144,13 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintHorizontal_bias="0.931"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.751" />
 
     <Button
-        android:id="@+id/btnDescontento"
+        android:id="@+id/btnDesconcertado"
         android:layout_width="138dp"
         android:layout_height="47dp"
         android:backgroundTint="#E0C8FF"
@@ -229,10 +195,44 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintHorizontal_bias="0.922"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.294" />
+
+    <Button
+        android:id="@+id/btnOptimista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E0C8FF"
+        android:text="Optimista"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472" />
+
+    <Button
+        android:id="@+id/btnNervioso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E0C8FF"
+        android:text="Nervioso"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.385" />
 
     <Button
         android:id="@+id/btnAmoroso"
@@ -252,7 +252,7 @@
         app:layout_constraintVertical_bias="0.294" />
 
     <Button
-        android:id="@+id/btnDescontento"
+        android:id="@+id/btnIntrigado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#E0C8FF"
@@ -286,7 +286,7 @@
         app:layout_constraintVertical_bias="0.215" />
 
     <Button
-        android:id="@+id/btnDescontento"
+        android:id="@+id/btnDesanimado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#E0C8FF"
@@ -320,7 +320,7 @@
         app:layout_constraintVertical_bias="0.385" />
 
     <Button
-        android:id="@+id/btnDescontento"
+        android:id="@+id/btnAgradecido"
         android:layout_width="114dp"
         android:layout_height="49dp"
         android:backgroundTint="#E0C8FF"
@@ -337,7 +337,7 @@
         app:layout_constraintVertical_bias="0.659" />
 
     <Button
-        android:id="@+id/btnDescontento"
+        android:id="@+id/btnSatisfecho"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#E0C8FF"
@@ -439,7 +439,7 @@
         app:layout_constraintVertical_bias="0.133" />
 
     <Button
-        android:id="@+id/btnDescontento"
+        android:id="@+id/btnEncantado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#E0C8FF"
