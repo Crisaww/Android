@@ -83,11 +83,11 @@
         app:layout_constraintVertical_bias="0.114" />
 
     <Button
-        android:id="@+id/btnDisgustado"
+        android:id="@+id/btnEnojado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#E0C8FF"
-        android:text="Disgustado"
+        android:text="Enojado"
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -100,11 +100,11 @@
         app:layout_constraintVertical_bias="0.202" />
 
     <Button
-        android:id="@+id/btnDesconcertado"
+        android:id="@+id/btnDisgustado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#E0C8FF"
-        android:text="Desconcertado"
+        android:text="Disgustado"
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -202,11 +202,11 @@
         app:layout_constraintVertical_bias="0.758" />
 
     <Button
-        android:id="@+id/btnRelajado"
+        android:id="@+id/btnAsustado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#E0C8FF"
-        android:text="Relajado"
+        android:text="Asustado"
         android:textColor="#000000"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -287,7 +287,7 @@
         app:layout_constraintVertical_bias="0.66" />
 
     <Button
-        android:id="@+id/btnMelancólico"
+        android:id="@+id/btnAvergonzado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#E0C8FF"
@@ -349,10 +349,10 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.202"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.853" />
+        app:layout_constraintVertical_bias="0.857" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
