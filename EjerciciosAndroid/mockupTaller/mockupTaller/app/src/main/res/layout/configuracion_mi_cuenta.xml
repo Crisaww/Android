@@ -35,11 +35,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.017" />
 
+
     <TextView
         android:id="@+id/text_configuracion_mi_cuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/fuente_poppins_medium"
@@ -49,8 +50,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintStart_toEndOf="@+id/btnVolver"
         app:layout_constraintTop_toTopOf="@+id/view2"
-        app:layout_constraintVertical_bias="0.65999997" />
-
+        app:layout_constraintVertical_bias="0.714" />
 
     <TextView
         android:id="@+id/textUser_actual"
@@ -76,6 +76,7 @@
         android:backgroundTint="#DADADA"
         android:ems="10"
         android:focusable="true"
+        app:cornerRadius="10dp"
         android:focusableInTouchMode="true"
         android:fontFamily="@font/poppins_light"
         android:hint="Ingrese su usuario actual"
@@ -115,6 +116,7 @@
         android:backgroundTint="#DADADA"
         android:ems="10"
         android:focusable="true"
+        app:cornerRadius="10dp"
         android:focusableInTouchMode="true"
         android:fontFamily="@font/poppins_light"
         android:hint="Ingrese su usuario nuevo"
@@ -137,6 +139,8 @@
         android:backgroundTint="@color/morado2"
         android:onClick="iniciarSesion"
         android:text="Guardar cambios"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -180,6 +184,7 @@
         android:backgroundTint="#DADADA"
         android:ems="10"
         android:focusable="true"
+        app:cornerRadius="10dp"
         android:focusableInTouchMode="true"
         android:fontFamily="@font/poppins_light"
         android:hint="Ingrese su correco electrónico actual"
@@ -219,6 +224,7 @@
         android:backgroundTint="#DADADA"
         android:ems="10"
         android:focusable="true"
+        app:cornerRadius="10dp"
         android:focusableInTouchMode="true"
         android:fontFamily="@font/poppins_light"
         android:hint="Ingrese su correo electrónico nuevo"
@@ -241,6 +247,8 @@
         android:onClick="iniciarSesion"
         android:text="Guardar cambios"
         android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -254,6 +262,8 @@
         android:backgroundTint="#D91818"
         android:text="Eliminar cuenta"
         android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -315,6 +325,7 @@
         android:fontFamily="@font/poppins_light"
         android:hint="Ingrese el nombre de usuario"
         android:inputType="text"
+        app:cornerRadius="10dp"
         android:textColor="#000000"
         android:textColorHint="#000000"
         android:textIsSelectable="false"
@@ -338,6 +349,7 @@
         android:hint="Ingrese su correo electrónico"
         android:inputType="text"
         android:textColor="#000000"
+        app:cornerRadius="10dp"
         android:textColorHint="#000000"
         android:textIsSelectable="false"
         android:textSize="14sp"

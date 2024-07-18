@@ -70,9 +70,12 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="84dp"
         android:layout_marginEnd="8dp"
-        android:backgroundTint="#E1BEE7"
+        android:backgroundTint="#E0C8FF"
         android:text="Con"
         android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
         app:layout_constraintEnd_toStartOf="@+id/btnDe"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -84,9 +87,12 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="84dp"
         android:layout_marginEnd="8dp"
-        android:backgroundTint="#E1BEE7"
+        android:backgroundTint="#E0C8FF"
         android:text="De"
         android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnCon"
         app:layout_constraintTop_toTopOf="parent" />
@@ -97,9 +103,12 @@
         android:layout_height="48dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="48dp"
-        android:backgroundTint="#E1BEE7"
+        android:backgroundTint="#E0C8FF"
         android:text="Para"
         android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCon" />
 
@@ -109,9 +118,12 @@
         android:layout_height="43dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="56dp"
-        android:backgroundTint="#E1BEE7"
+        android:backgroundTint="#E0C8FF"
         android:text="Hasta"
         android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnDe" />
 
@@ -121,9 +133,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="76dp"
         android:layout_marginTop="48dp"
-        android:backgroundTint="#E1BEE7"
+        android:backgroundTint="#E0C8FF"
         android:text="Ser"
         android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnPara" />
 
@@ -133,9 +148,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         android:layout_marginEnd="72dp"
-        android:backgroundTint="#E1BEE7"
+        android:backgroundTint="#E0C8FF"
         android:text="Hacer"
         android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnHasta" />
 
