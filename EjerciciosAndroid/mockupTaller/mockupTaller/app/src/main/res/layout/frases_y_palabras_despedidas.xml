@@ -17,10 +17,10 @@
         android:backgroundTintMode="src_in"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
 
     <ImageView
         android:id="@+id/btnVolver"
@@ -29,7 +29,7 @@
         android:background="@drawable/flecha_volver"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.050"
+        app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022" />
@@ -41,11 +41,10 @@
         android:src="@drawable/home_house_ui_svgrepo_com"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.940"
+        app:layout_constraintHorizontal_bias="0.958"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022" />
-
 
     <TextView
         android:id="@+id/textfrases_despedidas"
@@ -58,13 +57,13 @@
         android:fontFamily="@font/fuente_poppins_medium"
         android:text="Frases y palabras - Despedidas"
         android:textColor="@color/white"
-        android:textSize="19dp"
+        android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toStartOf="@+id/imageInicio"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toEndOf="@+id/btnVolver"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btnAdios"

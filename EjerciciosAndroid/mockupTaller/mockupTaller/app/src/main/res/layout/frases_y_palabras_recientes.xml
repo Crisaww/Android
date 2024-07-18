@@ -66,12 +66,11 @@
         app:layout_constraintVertical_bias="0.01" />
 
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cuadroTextoLayout"
         android:layout_width="335dp"
         android:layout_height="195dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/cuadro_morado_redondeado"
         android:padding="8dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -112,6 +111,7 @@
             app:layout_constraintVertical_bias="0.496" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
     <Button
         android:id="@+id/btnReproducir"
         android:layout_width="wrap_content"
@@ -124,10 +124,10 @@
         app:iconTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.474" />
-
+        app:layout_constraintVertical_bias="0.439" />
 
     <Button
         android:id="@+id/btnHola"
@@ -140,10 +140,58 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.247"
+        app:layout_constraintHorizontal_bias="0.191"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.575" />
+
+    <Button
+        android:id="@+id/btnQue_onda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E0C8FF"
+        android:text="¿Qué onda?"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <Button
+        android:id="@+id/btnComo_te_fue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E0C8FF"
+        android:text="¿Cómo te fue?"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.764" />
+
+    <Button
+        android:id="@+id/btnBien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E0C8FF"
+        android:text="Bien"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.853" />
 
     <Button
         android:id="@+id/btnEstas"
@@ -163,22 +211,6 @@
 
 
     <Button
-        android:id="@+id/btnQue_onda"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#E0C8FF"
-        android:text="¿Qué onda?"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        app:cornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.216"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.666" />
-
-    <Button
         android:id="@+id/btnTe_amo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -196,23 +228,6 @@
 
 
     <Button
-        android:id="@+id/btnComo_te_fue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#E0C8FF"
-        android:text="¿Cómo te fue?"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        app:cornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.229"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.764" />
-
-
-    <Button
         android:id="@+id/btnJaja"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -227,22 +242,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.764" />
-
-    <Button
-        android:id="@+id/btnBien"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#E0C8FF"
-        android:text="Bien"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        app:cornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.247"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.853" />
 
     <Button
         android:id="@+id/btnQue"
