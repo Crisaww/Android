@@ -2,6 +2,7 @@ package com.example.mockuptaller
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
@@ -20,6 +21,14 @@ class recuperar_contra: AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        var btnVolver = findViewById<ImageView>(R.id.btnVolver)
+        btnVolver.setOnClickListener {
+            /*
+            finish elimina o cierra la activity actual
+             */
+            finish()
+        }
+
         val btnEnviar: Button = findViewById(R.id.btnRecuperarContra)
         btnEnviar.setOnClickListener {
             mostrarAlerta()
