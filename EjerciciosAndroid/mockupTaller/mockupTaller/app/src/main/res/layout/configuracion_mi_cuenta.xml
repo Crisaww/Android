@@ -22,7 +22,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-
     <ImageView
         android:id="@+id/btnVolver"
         android:layout_width="30dp"
@@ -34,7 +33,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.017" />
-
 
     <TextView
         android:id="@+id/text_configuracion_mi_cuenta"
@@ -107,7 +105,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.201" />
 
-
     <EditText
         android:id="@+id/txtUser_nuevo"
         android:layout_width="281dp"
@@ -131,7 +128,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.25" />
 
-
     <TextView
         android:id="@+id/textCorreo_actual"
         android:layout_width="wrap_content"
@@ -147,7 +143,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.327" />
-
 
     <EditText
         android:id="@+id/txtCorreo_actual"

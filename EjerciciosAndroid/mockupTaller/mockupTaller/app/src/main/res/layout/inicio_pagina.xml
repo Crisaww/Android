@@ -22,7 +22,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-
     <ImageView
         android:id="@+id/cerrarSesion"
         android:layout_width="30dp"
@@ -137,7 +136,6 @@
         app:layout_constraintTop_toTopOf="@+id/view2"
         app:layout_constraintVertical_bias="0.42" />
 
-
     <Button
         android:id="@+id/btnConfiguracion"
         android:layout_width="231dp"
@@ -160,8 +158,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view2"
         app:layout_constraintVertical_bias="0.558" />
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

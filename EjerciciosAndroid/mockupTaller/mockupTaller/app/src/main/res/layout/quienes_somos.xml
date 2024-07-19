@@ -6,9 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".quienes_somos"
     tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="63dp">
+    tools:layout_editor_absoluteY="63dp"
+    tools:context=".quienes_somos">
 
     <View
         android:id="@+id/view2"
@@ -34,7 +34,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.473" />
-
 
     <TextView
         android:id="@+id/textComo_usar"
@@ -121,7 +120,6 @@
             android:layout_marginEnd="8dp"
             app:srcCompat="@drawable/linkedin" />
     </LinearLayout>
-
 
     <ImageView
         android:id="@+id/imagecarolina"
@@ -330,7 +328,6 @@
 
     </LinearLayout>
 
-
     <ImageView
         android:id="@+id/imagemaria"
         android:layout_width="113dp"
@@ -469,6 +466,5 @@
             app:srcCompat="@drawable/linkedin" />
 
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

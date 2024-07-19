@@ -22,7 +22,6 @@ android:backgroundTint="@color/white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-
     <ImageView
         android:id="@+id/btnVolver"
         android:layout_width="30dp"
@@ -106,7 +105,6 @@ android:backgroundTint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.402" />
-
 
     <EditText
         android:id="@+id/txtNueva"
@@ -203,6 +201,5 @@ android:backgroundTint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.811" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

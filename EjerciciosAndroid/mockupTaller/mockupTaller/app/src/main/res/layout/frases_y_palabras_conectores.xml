@@ -34,7 +34,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.49" />
 
-
     <ImageView
         android:id="@+id/imageInicio"
         android:layout_width="30dp"
@@ -159,6 +158,5 @@
         app:cornerRadius="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCon" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

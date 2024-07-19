@@ -84,8 +84,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.564" />
 
-        <!-- Botón de Iniciar Sesión con esquinas redondeadas -->
-
         <TextView
             android:id="@+id/txtCuenta"
             android:layout_width="wrap_content"
@@ -123,7 +121,6 @@
             app:layout_constraintStart_toEndOf="@+id/txtCuenta"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.73" />
-
 
         <EditText
             android:id="@+id/editTextTextPassword"

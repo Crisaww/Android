@@ -44,7 +44,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <TextView
         android:id="@+id/textfrases_emociones"
         android:layout_width="wrap_content"
@@ -62,7 +61,6 @@
         app:layout_constraintStart_toEndOf="@+id/btnVolver"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.6" />
-
 
     <Button
         android:id="@+id/btnDisgustado"
@@ -488,6 +486,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
