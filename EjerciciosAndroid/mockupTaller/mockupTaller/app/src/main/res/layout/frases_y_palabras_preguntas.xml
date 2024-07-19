@@ -118,9 +118,26 @@
         app:layout_constraintTop_toBottomOf="@+id/btn09" />
 
     <Button
+        android:id="@+id/btn06"
+        android:layout_width="162dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#E0C8FF"
+        android:text="¿Tienes alguna afición o pasatiempo?"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn11" />
+
+    <Button
         android:id="@+id/btn05"
-        android:layout_width="155dp"
-        android:layout_height="48dp"
+        android:layout_width="201dp"
+        android:layout_height="55dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="36dp"
@@ -135,27 +152,10 @@
         app:layout_constraintTop_toBottomOf="@+id/btn04" />
 
     <Button
-        android:id="@+id/btn06"
-        android:layout_width="162dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        android:backgroundTint="#E0C8FF"
-        android:text="¿Tienes alguna afición o pasatiempo?"
-        android:textColor="#000000"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        app:cornerRadius="10dp"
-        app:layout_constraintEnd_toStartOf="@+id/btn05"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn11" />
-
-    <Button
         android:id="@+id/btn02"
         android:layout_width="169dp"
         android:layout_height="72dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
         android:backgroundTint="#E0C8FF"
@@ -194,7 +194,7 @@
         android:layout_marginTop="36dp"
         android:layout_marginEnd="36dp"
         android:backgroundTint="#E0C8FF"
-        android:text="¿Dónde creciste?"
+        android:text="¿Dónde nacistes?"
         android:textColor="#000000"
         android:textSize="12sp"
         android:textStyle="bold"
