@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="63dp"
+    tools:context=".quienes_somos">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="455dp"
+        android:layout_height="57dp"
+        android:background="@drawable/degradado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/btnVolver"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/flecha_volver"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.050"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.473" />
+
+    <TextView
+        android:id="@+id/textComo_usar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/fuente_poppins_medium"
+        android:text="¿Quiénes somos?"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toEndOf="@+id/btnVolver"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <ImageView
+        android:id="@+id/imagenangie"
+        android:layout_width="113dp"
+        android:layout_height="115dp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11"
+        app:srcCompat="@drawable/usuario" />
+
+    <TextView
+        android:id="@+id/textAngie"
+        android:layout_width="159dp"
+        android:layout_height="66dp"
+        android:layout_margin="5sp"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:text="Angie Lizeth Trujillo Gonzalez"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textCarolina"
+        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.275" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="0sp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/textAngie"
+        app:layout_constraintStart_toStartOf="@id/textAngie"
+        app:layout_constraintTop_toBottomOf="@id/textAngie">
+
+        <ImageView
+            android:id="@+id/instagramAngie"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/instagram" />
+
+        <ImageView
+            android:id="@+id/facebookAngie"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/googleAngie"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/google" />
+
+        <ImageView
+            android:id="@+id/linkedinAngie"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/linkedin" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagecarolina"
+        android:layout_width="113dp"
+        android:layout_height="115dp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11"
+        app:srcCompat="@drawable/usuario" />
+
+    <TextView
+        android:id="@+id/textCarolina"
+        android:layout_width="159dp"
+        android:layout_height="66dp"
+        android:layout_margin="5sp"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:text="Carolina Martínez Cortes"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.275" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="0sp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/textCarolina"
+        app:layout_constraintStart_toStartOf="@id/textCarolina"
+        app:layout_constraintTop_toBottomOf="@id/textCarolina">
+
+        <ImageView
+            android:id="@+id/instagramCaro"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/instagram" />
+
+        <ImageView
+            android:id="@+id/facebookCaro"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/googleCaro"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/google" />
+
+        <ImageView
+            android:id="@+id/linkedinCaro"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/linkedin" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagecristian"
+        android:layout_width="113dp"
+        android:layout_height="115dp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469"
+        app:srcCompat="@drawable/usuario" />
+
+    <TextView
+        android:id="@+id/textCristian"
+        android:layout_width="159dp"
+        android:layout_height="66dp"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:text="Cristian Fernando Narváez Sánchez"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.607" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="0sp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/textCristian"
+        app:layout_constraintStart_toStartOf="@id/textCristian"
+        app:layout_constraintTop_toBottomOf="@id/textCristian">
+
+        <ImageView
+            android:id="@+id/instagramCritstian"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/instagram" />
+
+        <ImageView
+            android:id="@+id/facebookCristian"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/googleCristian"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/google" />
+
+        <ImageView
+            android:id="@+id/linkedinCristian"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/linkedin" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagemar"
+        android:layout_width="113dp"
+        android:layout_height="115dp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469"
+        app:srcCompat="@drawable/usuario" />
+
+    <TextView
+        android:id="@+id/textMar"
+        android:layout_width="159dp"
+        android:layout_height="66dp"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:text="Maria del Mar Artunduaga Artunduaga"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.607" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="0sp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/textMar"
+        app:layout_constraintStart_toStartOf="@id/textMar"
+        app:layout_constraintTop_toBottomOf="@id/textMar">
+
+        <ImageView
+            android:id="@+id/instagramMar"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/instagram" />
+
+        <ImageView
+            android:id="@+id/facebookMar"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/googleMar"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/google" />
+
+        <ImageView
+            android:id="@+id/linkedinMar"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/linkedin" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagemaria"
+        android:layout_width="113dp"
+
+        android:layout_height="115dp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814"
+        app:srcCompat="@drawable/usuario" />
+
+    <TextView
+        android:id="@+id/textMaria"
+        android:layout_width="159dp"
+        android:layout_height="66dp"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:text="Maria Jose Murcia Martínez"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.927" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="0sp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/textMaria"
+        app:layout_constraintStart_toStartOf="@id/textMaria"
+        app:layout_constraintTop_toBottomOf="@id/textMaria">
+
+        <ImageView
+            android:id="@+id/instagramMaria"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/instagram" />
+
+        <ImageView
+            android:id="@+id/facebookMaria"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/googleMaria"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/google" />
+
+        <ImageView
+            android:id="@+id/linkedinMaria"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/linkedin" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagemayra"
+        android:layout_width="113dp"
+        android:layout_height="115dp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814"
+        app:srcCompat="@drawable/usuario" />
+
+    <TextView
+        android:id="@+id/textMayra"
+        android:layout_width="159dp"
+        android:layout_height="66dp"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:text="Mayra Alejandra Tamayo Perdomo"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.927" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="0sp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/textMayra"
+        app:layout_constraintStart_toStartOf="@id/textMayra"
+        app:layout_constraintTop_toBottomOf="@id/textMayra">
+
+        <ImageView
+            android:id="@+id/instagramMayra"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/instagram" />
+
+        <ImageView
+            android:id="@+id/facebookMayra"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/googleMayra"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/google" />
+
+        <ImageView
+            android:id="@+id/linkedinMayra"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/linkedin" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
