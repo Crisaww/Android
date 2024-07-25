@@ -250,9 +250,24 @@ class guardarLibroFragment : Fragment() {
         btnGuardar.setOnClickListener{guardarLibro()
         }
 
-        var btnVolver:Button=findViewById(R.id.btnVolver)
+        var btnVolver:Button=view.findViewById(R.id.btnVolver)
         btnVolver.setOnClickListener {
-         
+            val fragmentManager = requireActivity().supportFragmentManager
+
+            // Crear una instancia de FragmentoB
+            val fragmentoB = pagina_principal()
+
+            // Comienza la transacción de fragmentos
+            val transaction = fragmentManager.beginTransaction()
+
+            // Reemplaza FragmentoA con FragmentoB
+            transaction.replace(R.id.fragmentContainerView4, fragmentoB)
+
+            // Añade la transacción al back stack si quieres permitir que el usuario regrese a FragmentoA
+            transaction.addToBackStack(null)
+
+            // Confirma los cambios
+            transaction.commit()
         }
 
         consultarLibro()
