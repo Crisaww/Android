@@ -42,7 +42,7 @@ class guardarLibroFragment : Fragment() {
     private lateinit var txtOcupados:EditText
     private lateinit var btnGuardar: Button
     //De manera temporal se asigna un id
-    private var id:Int=12
+    private var id:Int=0
 
     /*
     Request: Es la petición que se hace a la api
@@ -241,14 +241,20 @@ class guardarLibroFragment : Fragment() {
         var view = inflater.inflate(
             R.layout.fragment_guardar_libro, container, false)
         txtTitulo=view.findViewById(R.id.txtTitulo)
-        txtAutor=view.findViewById(R.id.lblAutor)
-        txtIsbn=view.findViewById(R.id.lblIsbn)
-        txtGenero=view.findViewById(R.id.lblGenero)
-        txtDisponibles=view.findViewById(R.id.lblDisponibles)
+        txtAutor=view.findViewById(R.id.txtAutor)
+        txtIsbn=view.findViewById(R.id.txtIsbn)
+        txtGenero=view.findViewById(R.id.txtGenero)
+        txtDisponibles=view.findViewById(R.id.txtDisponibles)
         txtOcupados=view.findViewById(R.id.txtOcupados)
         btnGuardar=view.findViewById(R.id.btnGuardar)
         btnGuardar.setOnClickListener{guardarLibro()
         }
+
+        var btnVolver:Button=findViewById(R.id.btnVolver)
+        btnVolver.setOnClickListener {
+         
+        }
+
         consultarLibro()
         return view
     }

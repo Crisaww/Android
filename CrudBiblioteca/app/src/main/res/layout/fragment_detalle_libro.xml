@@ -93,7 +93,7 @@
                 android:text="Libros disponibles:" />
 
             <EditText
-                android:id="@+id/txtDisponibles"
+                android:id="@+id/lblDisponibles"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:ems="10"
