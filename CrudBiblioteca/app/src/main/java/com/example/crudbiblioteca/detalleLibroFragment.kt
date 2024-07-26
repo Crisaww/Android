@@ -52,7 +52,7 @@ class detalleLibroFragment : Fragment() {
 
 
     //Se asigna un id existente temporal
-    private var id:Int=12
+    private var id:Int=0
 
     fun consultarLibro(){
         /*

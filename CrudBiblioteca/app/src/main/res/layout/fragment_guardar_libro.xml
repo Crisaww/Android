@@ -32,10 +32,11 @@
 
                 <EditText
                     android:id="@+id/txtTitulo"
-                    android:layout_width="match_parent"
+                    android:layout_width="385dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:translationX="10dp" />
 
                 <TextView
                     android:id="@+id/lblAutor"
@@ -48,10 +49,11 @@
 
                 <EditText
                     android:id="@+id/txtAutor"
-                    android:layout_width="match_parent"
+                    android:layout_width="385dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:translationX="10dp" />
 
                 <TextView
                     android:id="@+id/lblIsbn"
@@ -63,10 +65,11 @@
 
                 <EditText
                     android:id="@+id/txtIsbn"
-                    android:layout_width="match_parent"
+                    android:layout_width="385dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:translationX="10dp" />
 
                 <TextView
                     android:id="@+id/lblGenero"
@@ -78,10 +81,11 @@
 
                 <EditText
                     android:id="@+id/txtGenero"
-                    android:layout_width="match_parent"
+                    android:layout_width="385dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:translationX="10dp" />
 
                 <TextView
                     android:id="@+id/lblDisponibles"
@@ -93,10 +97,11 @@
 
                 <EditText
                     android:id="@+id/txtDisponibles"
-                    android:layout_width="match_parent"
+                    android:layout_width="385dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:translationX="10dp" />
 
                 <TextView
                     android:id="@+id/lblOcupados"
@@ -108,10 +113,11 @@
 
                 <EditText
                     android:id="@+id/txtOcupados"
-                    android:layout_width="match_parent"
+                    android:layout_width="385dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:translationX="10dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -120,26 +126,32 @@
                     android:orientation="vertical">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="336dp"
                         android:layout_height="61dp"
                         android:layout_weight="1"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:translationX="40dp">
 
                         <Button
                             android:id="@+id/btnVolver"
-                            android:layout_width="225dp"
+                            android:layout_width="125dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:backgroundTint="@color/cafeoscuro"
-                            android:text="Volver" />
+                            android:text="Volver"
+                            app:icon="@drawable/arrow_back_left_svgrepo_com"
+                            app:iconGravity="start"
+                            app:iconSize="25dp" />
 
                         <Button
                             android:id="@+id/btnGuardar"
-                            android:layout_width="225dp"
+                            android:layout_width="125dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:backgroundTint="@color/cafeoscuro"
-                            android:text="Guardar" />
+                            android:text="Guardar"
+                            app:icon="@drawable/save_floppy_svgrepo_com"
+                            app:iconGravity="end" />
 
                     </LinearLayout>
 
@@ -150,7 +162,9 @@
                         android:layout_weight="1"
                         android:backgroundTint="@color/cafeoscuro"
                         android:text="Listado de libros"
-                        android:translationX="100dp" />
+                        android:translationX="100dp"
+                        app:icon="@drawable/books_library_knowledge_svgrepo_com"
+                        app:iconSize="25dp" />
 
                 </LinearLayout>
             </LinearLayout>
