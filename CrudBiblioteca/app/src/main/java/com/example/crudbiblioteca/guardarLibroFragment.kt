@@ -11,6 +11,8 @@ import android.widget.Toast
 import com.android.volley.Request
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
+import com.example.crudbiblioteca.R.id
+
 import com.example.crudbiblioteca.config.config
 import com.example.crudbiblioteca.models.libro
 import com.google.gson.Gson
@@ -269,6 +271,30 @@ class guardarLibroFragment : Fragment() {
             // Confirma los cambios
             transaction.commit()
         }
+
+        var btnListaLibros1: Button=view.findViewById(R.id.btnListaLibros)
+        btnListaLibros1.setOnClickListener {
+            val fragmentManager = requireActivity().supportFragmentManager
+
+            // Crear una instancia de FragmentoB
+            val fragmentoB = listaLibroFragment()
+
+            // Comienza la transacción de fragmentos
+            val transaction = fragmentManager.beginTransaction()
+
+            // Reemplaza FragmentoA con FragmentoB
+            transaction.replace(R.id.fragmentContainerView4, fragmentoB)
+
+            // Añade la transacción al back stack si quieres permitir que el usuario regrese a FragmentoA
+            transaction.addToBackStack(null)
+
+            // Confirma los cambios
+            transaction.commit()
+        }
+
+
+
+
 
         consultarLibro()
         return view

@@ -18,8 +18,18 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="500dp"
+                android:layout_height="525dp"
                 android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/acme"
+                    android:text="REGISTRO DE LIBROS"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/lblTitulo"
@@ -156,7 +166,7 @@
                     </LinearLayout>
 
                     <Button
-                        android:id="@+id/button2"
+                        android:id="@+id/btnListaLibros"
                         android:layout_width="225dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
