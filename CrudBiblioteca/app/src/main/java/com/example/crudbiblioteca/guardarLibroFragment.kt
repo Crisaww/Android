@@ -57,9 +57,7 @@ class guardarLibroFragment : Fragment() {
     Método encargado de traer la info del libro
      */
 
-    fun actualizarLibro(){
-        
-    }
+
     fun consultarLibro(){
         /*
         Solo se debe consultar, si el ID es diferente a vacío
