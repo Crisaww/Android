@@ -7,16 +7,6 @@
     android:background="@color/cafeclaro"
     tools:context=".listaLibroFragment">
 
-    <Button
-        android:id="@+id/btnAgregar"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_gravity="bottom|end"
-        android:backgroundTint="@color/cafeoscuro"
-        android:paddingLeft="30dp"
-        app:icon="@drawable/add_svgrepo_com"
-        app:iconSize="25dp" />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

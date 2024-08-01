@@ -32,8 +32,8 @@ class adapterLibro
         lateinit var  btnEliminar:Button
 
         init{
-            lblTitulo=itemView.findViewById(R.id.lblTitulo)
-            lblAutor=itemView.findViewById(R.id.lblAutor)
+            lblTitulo=itemView.findViewById(R.id.lblNameLibro)
+            lblAutor=itemView.findViewById(R.id.lblNombreAutor)
             btnEditar=itemView.findViewById(R.id.btnEditar)
             btnEliminar=itemView.findViewById(R.id.btnEliminar)
         }

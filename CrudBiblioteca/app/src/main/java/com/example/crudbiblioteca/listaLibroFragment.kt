@@ -16,7 +16,7 @@ import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import com.example.crudbiblioteca.adapter.adapterLibro
 import com.example.crudbiblioteca.config.config
-import com.google.android.material.floatingactionbutton.FloatingActionButton
+
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -53,8 +53,7 @@ class listaLibroFragment : Fragment() {
         // Inflate the layout for this fragment
         View= inflater.inflate(R.layout.fragment_lista_libro, container, false)
         cargar_libro()
-        var btnAgregar=View.findViewById<FloatingActionButton>(R.id.btnAgregar)
-        btnAgregar.setOnClickListener{AgregarLibro()}
+
         return View
 
 
@@ -81,13 +80,16 @@ class listaLibroFragment : Fragment() {
                         bundle.putInt("id",it.getInt("id"))
                         val transaction=requireFragmentManager()
                             .beginTransaction()
-                        var fragmento=guardarLibroFragment()
+                        var fragmento=detalleLibroFragment()
                         fragmento.arguments=bundle
                         transaction.replace(
                             R.id.fragmentContainerView4,
                             fragmento).commit()
                         transaction.addToBackStack(null)
                     }
+
+
+
                     adapterLibro.onclickEliminar={
                         // mensaje de que si deseas eliminar
                         val builder = AlertDialog.Builder(requireContext())
@@ -155,15 +157,7 @@ class listaLibroFragment : Fragment() {
 
     }
 
-    fun AgregarLibro(){
-        val transaction=requireFragmentManager()
-            .beginTransaction()
-        var fragmento=guardarLibroFragment()
-        transaction.replace(
-            R.id.fragmentContainerView4,
-            fragmento).commit()
-        transaction.addToBackStack(null)
-    }
+
 
     companion object {
         /**

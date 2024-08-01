@@ -101,54 +101,7 @@ class guardarLibroFragment : Fragment() {
     fun guardarLibro(){
         try {
             if(id==0){ //Se crea el libro
-                /*
-               //Se crea la petición
-               val request=object:StringRequest(
-                   Request.Method.POST, //método de la de petición
-                   config.urlLibro, //url de la petición
-                   Response.Listener {
-                       //Metodo que se ejecuta cuando la peticion es correcta
-                                     Toast.makeText(
-                                         context,
-                                         "Se guardó correctamente",
-                                         Toast.LENGTH_LONG
-                                     ).show()
-                   },
-                   Response.ErrorListener {
-                       //metodo que se ejecuta cuando la peticion da error
-                       Toast.makeText(
-                           context,"Error al guardar",
-                           Toast.LENGTH_LONG
-                       ).show()
-                   }
-               )
-               {
-                   //Se agregan los datos para la petición
-                   override fun getParams(): MutableMap<String, String>{
-                       var parametros=HashMap<String,String>()
-                       /*
-                        parametros.put("titulo",txtTitulo.text.toString())
-                        parametros.put("autor",txtAutor.text.toString())
-                        parametros.put("isbn",txtIsbn.text.toString())
-                        parametros.put("genero",txtGenero.text.toString())
-                        parametros.put("disponibles",txtDisponibles.text.toString())
-                        parametros.put("ocupados",txtOcupados.text.toString())
-                        //uno por cada dato que requiere
-                         */
-                       parametros.put("titulo",txtTitulo.text.toString())
-                       parametros.put("nombre_autor",txtAutor.text.toString())
-                       parametros.put("isbn",txtIsbn.text.toString())
-                       parametros.put("genero",txtGenero.text.toString())
-                       parametros.put("num_ejem_disponibles",txtDisponibles.text.toString())
-                       parametros.put("num_ejem_ocupados",txtOcupados.text.toString())
 
-                       return parametros
-
-
-                   }
-               }
-
-    */
                 var parametros=JSONObject()
                 parametros.put("titulo",txtTitulo.text.toString())
                 parametros.put("autor",txtAutor.text.toString())
@@ -184,7 +137,8 @@ class guardarLibroFragment : Fragment() {
                 //Se añade la petición
                 queue.add(request)
 
-            }else{ //Se actualiza el libro
+            }
+            else{ //Se actualiza el libro
 
                 var parametros=JSONObject()
                 parametros.put("titulo",txtTitulo.text.toString())
