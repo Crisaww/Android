@@ -6,7 +6,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -93,11 +92,12 @@ class listaLibroFragment : Fragment() {
                     adapterLibro.onclickEliminar={
                         // mensaje de que si deseas eliminar
                         val builder = AlertDialog.Builder(requireContext())
-                        builder.setMessage("Desea eliminar este Registro")
+                        builder.setMessage("¿Deseas eliminar este registro?")
                             .setPositiveButton("Si") { dialog, id ->
                                 // START THE GAME! eliminar funcion  Llmara la funcion  eliminar()
                                 EliminarLibro(it.getInt("id"))
                                 // redirije a la vista de listar libro recargada pero aun me aparece un error
+
                                 val transaction=requireFragmentManager()
                                     .beginTransaction()
                                 var fragmento=listaLibroFragment()
@@ -105,6 +105,7 @@ class listaLibroFragment : Fragment() {
                                     R.id.fragmentContainerView4,
                                     fragmento).commit()
                                 transaction.addToBackStack(null)
+
                             }
                             .setNegativeButton("No") { dialog, id ->
                                 // User cancelled the dialog.
