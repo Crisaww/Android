@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MockupTaller"
+        android:theme="@style/Base.Theme.MockupTaller"
         tools:targetApi="31">
 
         <activity
@@ -68,7 +68,9 @@
 
         <activity
             android:name=".frases_y_palabras_emociones"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
 
         <activity
             android:name=".frases_y_palabras_favoritos"

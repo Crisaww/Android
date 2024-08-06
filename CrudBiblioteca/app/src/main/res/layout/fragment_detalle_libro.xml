@@ -4,133 +4,140 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cafeclaro"
     tools:context=".detalleLibroFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout"
-            android:layout_width="412dp"
-            android:layout_height="59dp"
-            android:background="@color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0">
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
         <LinearLayout
-            android:layout_width="372dp"
-            android:layout_height="563dp"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-            app:layout_constraintVertical_bias="0.203">
-
-            <TextView
-                android:id="@+id/lblTitulo"
-                android:layout_width="match_parent"
-                android:layout_height="31dp"
-                android:text="Titulo:" />
-
-            <EditText
-                android:id="@+id/txtTitulo"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:ems="10"
-                android:inputType="text" />
-
-            <TextView
-                android:id="@+id/lblAutor"
-                android:layout_width="match_parent"
-                android:layout_height="33dp"
-                android:text="Autor:" />
-
-            <EditText
-                android:id="@+id/txtAutor"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:ems="10"
-                android:inputType="text" />
-
-            <TextView
-                android:id="@+id/lblIsbn"
-                android:layout_width="match_parent"
-                android:layout_height="31dp"
-                android:text="Isbn:" />
-
-            <EditText
-                android:id="@+id/txtIsbn"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:ems="10"
-                android:inputType="text" />
-
-            <TextView
-                android:id="@+id/lblGenero"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:text="Género:" />
-
-            <EditText
-                android:id="@+id/txtGenero"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:ems="10"
-                android:inputType="text" />
-
-            <TextView
-                android:id="@+id/lblDisponibles"
-                android:layout_width="match_parent"
-                android:layout_height="29dp"
-                android:text="Libros disponibles:" />
-
-            <EditText
-                android:id="@+id/txtDisponibles"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:ems="10"
-                android:inputType="text" />
-
-            <TextView
-                android:id="@+id/lblOcupados"
-                android:layout_width="match_parent"
-                android:layout_height="29dp"
-                android:text="Libros ocupados:" />
-
-            <EditText
-                android:id="@+id/txtOcupados"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:ems="10"
-                android:inputType="text" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_width="408dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-                <Button
-                    android:id="@+id/btnEditar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Button" />
+                <TextView
+                    android:id="@+id/lblTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="31dp"
+                    android:paddingLeft="10dp"
+                    android:text="Titulo:" />
 
-                <Button
-                    android:id="@+id/btnEliminar"
-                    android:layout_width="wrap_content"
+                <EditText
+                    android:id="@+id/txtTitulo"
+                    android:layout_width="425dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Button" />
+                    android:ems="10"
+                    android:inputType="text"
+                    android:translationX="10dp" />
+
+                <TextView
+                    android:id="@+id/lblAutor"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:paddingLeft="10dp"
+                    android:text="Autor:" />
+
+                <EditText
+                    android:id="@+id/txtAutor"
+                    android:layout_width="425dp"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:translationX="10dp" />
+
+                <TextView
+                    android:id="@+id/lblIsbn"
+                    android:layout_width="match_parent"
+                    android:layout_height="31dp"
+                    android:paddingLeft="10dp"
+                    android:text="Isbn:" />
+
+                <EditText
+                    android:id="@+id/txtIsbn"
+                    android:layout_width="425dp"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:translationX="10dp" />
+
+                <TextView
+                    android:id="@+id/lblGenero"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingLeft="10dp"
+                    android:text="Género:" />
+
+                <EditText
+                    android:id="@+id/txtGenero"
+                    android:layout_width="425dp"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:translationX="10dp" />
+
+                <TextView
+                    android:id="@+id/lblDisponibles"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:paddingLeft="10dp"
+                    android:text="Libros disponibles:" />
+
+                <EditText
+                    android:id="@+id/txtDisponibles"
+                    android:layout_width="425dp"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:translationX="10dp" />
+
+                <TextView
+                    android:id="@+id/lblOcupados"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:paddingLeft="10dp"
+                    android:text="Libros ocupados:" />
+
+                <EditText
+                    android:id="@+id/txtOcupados"
+                    android:layout_width="425dp"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:translationX="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnEditar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/cafeoscuro"
+                        android:text="Editar" />
+
+                    <Button
+                        android:id="@+id/btnEliminar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/cafeoscuro"
+                        android:text="Eliminar" />
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
 </FrameLayout>

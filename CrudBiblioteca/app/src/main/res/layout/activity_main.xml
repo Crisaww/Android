@@ -15,22 +15,24 @@
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentContainerView4"
             android:name="com.example.crudbiblioteca.pagina_principal"
-            android:layout_width="412dp"
-            android:layout_height="500dp"
+            android:layout_width="460dp"
+            android:layout_height="662dp"
             android:background="@color/white"
             app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.719" />
+            app:layout_constraintVertical_bias="0.786" />
 
         <View
             android:id="@+id/view"
-            android:layout_width="417dp"
-            android:layout_height="90dp"
+            android:layout_width="484dp"
+            android:layout_height="84dp"
             android:background="@color/cafeoscuro"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
@@ -49,13 +51,14 @@
 
         <View
             android:id="@+id/view2"
-            android:layout_width="418dp"
+            android:layout_width="480dp"
             android:layout_height="2dp"
             android:background="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/view"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.06"
-            tools:layout_editor_absoluteX="0dp" />
+            app:layout_constraintVertical_bias="0.056" />
 
         <TextView
             android:id="@+id/TextoPrincipal"
@@ -74,7 +77,7 @@
 
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:layout_width="411dp"
+            android:layout_width="457dp"
             android:layout_height="65dp"
             android:background="@color/black"
             android:orientation="horizontal"
@@ -84,42 +87,57 @@
             tools:layout_editor_absoluteX="0dp">
 
             <Button
+                android:id="@+id/btnPrincipal"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:text="Inicio"
+                android:textSize="10sp"
+                app:icon="@drawable/house_chimney_blank_svgrepo_com"
+                app:iconGravity="top" />
+
+            <Button
                 android:id="@+id/btnRegistrarLibro"
-                android:layout_width="wrap_content"
+                android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:backgroundTint="#0000"
-                android:text="Libros"
+                android:text="Libro"
+                android:textSize="10sp"
                 app:icon="@drawable/book_bookmark_svgrepo_com"
                 app:iconGravity="top" />
 
             <Button
                 android:id="@+id/button6"
-                android:layout_width="wrap_content"
+                android:layout_width="75dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#0000"
-                android:text="Usuarios"
+                android:text="Usuario"
+                android:textSize="10sp"
                 app:icon="@drawable/users_group_svgrepo_com"
                 app:iconGravity="top" />
 
             <Button
                 android:id="@+id/button7"
-                android:layout_width="wrap_content"
+                android:layout_width="77dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#0000"
-                android:text="Préstamos"
+                android:text="Préstamo"
+                android:textSize="10sp"
                 app:icon="@drawable/loan_interest_time_value_of_money_effective_svgrepo_com"
                 app:iconGravity="top" />
 
             <Button
                 android:id="@+id/button8"
-                android:layout_width="wrap_content"
+                android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="#0000"
-                android:text="Multas"
+                android:text="Multa"
+                android:textSize="10sp"
                 app:icon="@drawable/money_bag_svgrepo_com"
                 app:iconGravity="top" />
         </LinearLayout>
@@ -127,11 +145,11 @@
         <TextView
             android:id="@+id/textView2"
             android:layout_width="264dp"
-            android:layout_height="59dp"
+            android:layout_height="30dp"
             android:fontFamily="@font/aclonica"
             android:text="BIBLIOWEB"
             android:textAlignment="center"
-            android:textSize="40sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

@@ -11,6 +11,8 @@ import android.widget.Toast
 import com.android.volley.Request
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
+import com.example.crudbiblioteca.R.id
+
 import com.example.crudbiblioteca.config.config
 import com.example.crudbiblioteca.models.libro
 import com.google.gson.Gson
@@ -55,9 +57,7 @@ class guardarLibroFragment : Fragment() {
     Método encargado de traer la info del libro
      */
 
-    fun actualizarLibro(){
-        
-    }
+
     fun consultarLibro(){
         /*
         Solo se debe consultar, si el ID es diferente a vacío
@@ -101,54 +101,7 @@ class guardarLibroFragment : Fragment() {
     fun guardarLibro(){
         try {
             if(id==0){ //Se crea el libro
-                /*
-               //Se crea la petición
-               val request=object:StringRequest(
-                   Request.Method.POST, //método de la de petición
-                   config.urlLibro, //url de la petición
-                   Response.Listener {
-                       //Metodo que se ejecuta cuando la peticion es correcta
-                                     Toast.makeText(
-                                         context,
-                                         "Se guardó correctamente",
-                                         Toast.LENGTH_LONG
-                                     ).show()
-                   },
-                   Response.ErrorListener {
-                       //metodo que se ejecuta cuando la peticion da error
-                       Toast.makeText(
-                           context,"Error al guardar",
-                           Toast.LENGTH_LONG
-                       ).show()
-                   }
-               )
-               {
-                   //Se agregan los datos para la petición
-                   override fun getParams(): MutableMap<String, String>{
-                       var parametros=HashMap<String,String>()
-                       /*
-                        parametros.put("titulo",txtTitulo.text.toString())
-                        parametros.put("autor",txtAutor.text.toString())
-                        parametros.put("isbn",txtIsbn.text.toString())
-                        parametros.put("genero",txtGenero.text.toString())
-                        parametros.put("disponibles",txtDisponibles.text.toString())
-                        parametros.put("ocupados",txtOcupados.text.toString())
-                        //uno por cada dato que requiere
-                         */
-                       parametros.put("titulo",txtTitulo.text.toString())
-                       parametros.put("nombre_autor",txtAutor.text.toString())
-                       parametros.put("isbn",txtIsbn.text.toString())
-                       parametros.put("genero",txtGenero.text.toString())
-                       parametros.put("num_ejem_disponibles",txtDisponibles.text.toString())
-                       parametros.put("num_ejem_ocupados",txtOcupados.text.toString())
 
-                       return parametros
-
-
-                   }
-               }
-
-    */
                 var parametros=JSONObject()
                 parametros.put("titulo",txtTitulo.text.toString())
                 parametros.put("autor",txtAutor.text.toString())
@@ -184,7 +137,8 @@ class guardarLibroFragment : Fragment() {
                 //Se añade la petición
                 queue.add(request)
 
-            }else{ //Se actualiza el libro
+            }
+            else{ //Se actualiza el libro
 
                 var parametros=JSONObject()
                 parametros.put("titulo",txtTitulo.text.toString())
@@ -269,6 +223,30 @@ class guardarLibroFragment : Fragment() {
             // Confirma los cambios
             transaction.commit()
         }
+
+        var btnListaLibros1: Button=view.findViewById(R.id.btnListaLibros)
+        btnListaLibros1.setOnClickListener {
+            val fragmentManager = requireActivity().supportFragmentManager
+
+            // Crear una instancia de FragmentoB
+            val fragmentoB = listaLibroFragment()
+
+            // Comienza la transacción de fragmentos
+            val transaction = fragmentManager.beginTransaction()
+
+            // Reemplaza FragmentoA con FragmentoB
+            transaction.replace(R.id.fragmentContainerView4, fragmentoB)
+
+            // Añade la transacción al back stack si quieres permitir que el usuario regrese a FragmentoA
+            transaction.addToBackStack(null)
+
+            // Confirma los cambios
+            transaction.commit()
+        }
+
+
+
+
 
         consultarLibro()
         return view
