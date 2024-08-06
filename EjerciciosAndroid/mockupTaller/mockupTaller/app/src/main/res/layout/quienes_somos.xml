@@ -63,7 +63,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.11"
-        app:srcCompat="@drawable/usuario" />
+        app:srcCompat="@drawable/angie" />
 
     <TextView
         android:id="@+id/textAngie"
@@ -132,7 +132,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.11"
-        app:srcCompat="@drawable/usuario" />
+        app:srcCompat="@drawable/carolina" />
 
     <TextView
         android:id="@+id/textCarolina"
@@ -201,7 +201,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.469"
-        app:srcCompat="@drawable/usuario" />
+        app:srcCompat="@drawable/cristian" />
 
     <TextView
         android:id="@+id/textCristian"
@@ -270,7 +270,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.469"
-        app:srcCompat="@drawable/usuario" />
+        app:srcCompat="@drawable/mar" />
 
     <TextView
         android:id="@+id/textMar"
@@ -331,7 +331,6 @@
     <ImageView
         android:id="@+id/imagemaria"
         android:layout_width="113dp"
-
         android:layout_height="115dp"
         app:iconTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -340,7 +339,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.814"
-        app:srcCompat="@drawable/usuario" />
+        app:srcCompat="@drawable/maria" />
 
     <TextView
         android:id="@+id/textMaria"
@@ -409,7 +408,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.814"
-        app:srcCompat="@drawable/usuario" />
+        app:srcCompat="@drawable/mayra" />
 
     <TextView
         android:id="@+id/textMayra"
