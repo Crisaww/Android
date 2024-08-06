@@ -12,12 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MockupTaller"
         tools:targetApi="31">
-        <activity
-            android:name=".MainActivity4"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
-            <!--android:configChanges="orientation|screenSize"-->
 
         <activity
             android:name=".quienes_somos"
