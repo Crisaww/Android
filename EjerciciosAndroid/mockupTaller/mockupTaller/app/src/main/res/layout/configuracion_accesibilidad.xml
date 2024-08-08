@@ -69,114 +69,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.095" />
 
-    <Button
-        android:id="@+id/btnGuardar_cambios_tema"
-        android:layout_width="175dp"
-        android:layout_height="41dp"
-        android:backgroundTint="@color/morado2"
-        android:text="Guardar cambios"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.904"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.392" />
-
-    <ImageView
-        android:id="@+id/imageSincronizar"
-        android:layout_width="157dp"
-        android:layout_height="81dp"
-        app:layout_constraintBottom_toTopOf="@+id/textSincronizar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.074"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.969"
-        app:srcCompat="@drawable/sincronizar_sistema" />
-
-    <TextView
-        android:id="@+id/textSincronizar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:fontFamily="@font/fuente_poppins_medium"
-        android:text="Sincronizar con el sistema"
-        android:textColor="#000000"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48" />
-
-    <ImageView
-        android:id="@+id/imagePredeterminado"
-        android:layout_width="157dp"
-        android:layout_height="81dp"
-        app:layout_constraintBottom_toTopOf="@+id/textPredeterminado"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.062"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/predeterminado" />
-
-    <ImageView
-        android:id="@+id/imageOscuro"
-        android:layout_width="157dp"
-        android:layout_height="81dp"
-        app:layout_constraintBottom_toTopOf="@+id/textOscuro"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.937"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/oscuro" />
-
-    <TextView
-        android:id="@+id/textOscuro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:fontFamily="@font/fuente_poppins_medium"
-        android:text="Oscuro"
-        android:textColor="#000000"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.812"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.281" />
-
-    <TextView
-        android:id="@+id/textPredeterminado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:fontFamily="@font/fuente_poppins_medium"
-        android:text="Predeterminado"
-        android:textColor="#000000"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.094"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.281" />
-
     <View
         android:id="@+id/linea_salida_de_voz"
         android:layout_width="match_parent"
         android:layout_height="2dp"
+        android:layout_marginBottom="16dp"
         android:background="#000000"
-        app:layout_constraintTop_toBottomOf="@+id/textSincronizar"
         app:layout_constraintBottom_toTopOf="@+id/textSalida_de_voz"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textSalida_de_voz"
@@ -329,5 +231,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.968" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="122dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
